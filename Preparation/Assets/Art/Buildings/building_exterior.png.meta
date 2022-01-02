@@ -1,0 +1,1464 @@
+fileFormatVersion: 2
+guid: be6edab43c9e03c4d89eeb38b501af05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 121165515144623360
+    second: spr_building_exterior_0
+  - first:
+      213: -6098192291527571498
+    second: spr_building_exterior_1
+  - first:
+      213: 537077623581331909
+    second: spr_building_exterior_2
+  - first:
+      213: -2692670773097732598
+    second: spr_building_exterior_3
+  - first:
+      213: 3879661341119393173
+    second: spr_building_exterior_4
+  - first:
+      213: 287382670474232542
+    second: spr_building_exterior_5
+  - first:
+      213: 5566121307487737831
+    second: spr_building_exterior_6
+  - first:
+      213: -7531985164249930105
+    second: spr_building_exterior_7
+  - first:
+      213: 3284587175436107475
+    second: spr_building_exterior_8
+  - first:
+      213: -7019079419915084753
+    second: spr_building_exterior_9
+  - first:
+      213: 2086259550196351856
+    second: spr_building_exterior_10
+  - first:
+      213: 366253467061247829
+    second: spr_building_exterior_11
+  - first:
+      213: 7100634754158413284
+    second: spr_building_exterior_12
+  - first:
+      213: -4485032549324514296
+    second: spr_building_exterior_13
+  - first:
+      213: -9004124958831099553
+    second: spr_building_exterior_14
+  - first:
+      213: -4804925564217216249
+    second: spr_building_exterior_15
+  - first:
+      213: -8247987910935862096
+    second: spr_building_exterior_16
+  - first:
+      213: 5692925748621035366
+    second: spr_building_exterior_17
+  - first:
+      213: 264684953049240097
+    second: spr_building_exterior_18
+  - first:
+      213: -1080969527584896528
+    second: spr_building_exterior_19
+  - first:
+      213: 5322325748931528304
+    second: spr_building_exterior_20
+  - first:
+      213: 8937424225159083486
+    second: spr_building_exterior_21
+  - first:
+      213: 2720669581973269642
+    second: spr_building_exterior_22
+  - first:
+      213: 3127419883056904132
+    second: spr_building_exterior_23
+  - first:
+      213: -8014044889063764677
+    second: spr_building_exterior_24
+  - first:
+      213: 4517009313744028022
+    second: spr_building_exterior_25
+  - first:
+      213: 776315031724185960
+    second: spr_building_exterior_26
+  - first:
+      213: -2271739370594810545
+    second: spr_building_exterior_27
+  - first:
+      213: -4750579495797640595
+    second: spr_building_exterior_28
+  - first:
+      213: -6533418659784573352
+    second: spr_building_exterior_29
+  - first:
+      213: 5848274258391475139
+    second: spr_building_exterior_30
+  - first:
+      213: -3763175216985366557
+    second: spr_building_exterior_31
+  - first:
+      213: 6759476307365253971
+    second: spr_building_exterior_32
+  - first:
+      213: 2565890545864045133
+    second: spr_building_exterior_33
+  - first:
+      213: 8318447887268475626
+    second: spr_building_exterior_34
+  - first:
+      213: -8426278030838858058
+    second: spr_building_exterior_35
+  - first:
+      213: 7850301797884199353
+    second: spr_building_exterior_36
+  - first:
+      213: 8169674211580291212
+    second: spr_building_exterior_37
+  - first:
+      213: 2333474492937337331
+    second: spr_building_exterior_38
+  - first:
+      213: -2409932299133266019
+    second: spr_building_exterior_39
+  - first:
+      213: -2844346422448352991
+    second: spr_building_exterior_40
+  - first:
+      213: -7792034800607350502
+    second: spr_building_exterior_41
+  - first:
+      213: -4214727667074732231
+    second: spr_building_exterior_42
+  - first:
+      213: -4223711919502795564
+    second: spr_building_exterior_43
+  - first:
+      213: 566694759486962439
+    second: spr_building_exterior_44
+  - first:
+      213: -5856255170485291427
+    second: spr_building_exterior_45
+  - first:
+      213: -2001451653951493946
+    second: spr_building_exterior_46
+  - first:
+      213: 3194911165009908132
+    second: spr_building_exterior_47
+  - first:
+      213: 5283732459053453266
+    second: spr_building_exterior_48
+  - first:
+      213: -7486572519701768526
+    second: spr_building_exterior_49
+  - first:
+      213: -770738055615494536
+    second: spr_building_exterior_50
+  - first:
+      213: 7256588275190689436
+    second: spr_building_exterior_51
+  - first:
+      213: -2311235738606303072
+    second: spr_building_exterior_52
+  - first:
+      213: -3397778640141478615
+    second: spr_building_exterior_53
+  - first:
+      213: -5884823590732588077
+    second: spr_building_exterior_54
+  - first:
+      213: -5190097675858677482
+    second: spr_building_exterior_55
+  - first:
+      213: -2001769883923377540
+    second: spr_building_exterior_56
+  - first:
+      213: 1628141331507998474
+    second: spr_building_exterior_57
+  - first:
+      213: 217221334814689448
+    second: spr_building_exterior_58
+  - first:
+      213: -2681737170845814482
+    second: spr_building_exterior_59
+  - first:
+      213: 110183643628158276
+    second: spr_building_exterior_60
+  - first:
+      213: 8597019134569442570
+    second: spr_building_exterior_61
+  - first:
+      213: -2426957494004542044
+    second: spr_building_exterior_62
+  - first:
+      213: -4257994749360629422
+    second: spr_building_exterior_63
+  - first:
+      213: -2528098133651414365
+    second: spr_building_exterior_64
+  - first:
+      213: 8770979964052417774
+    second: spr_building_exterior_65
+  - first:
+      213: 89169869628975992
+    second: spr_building_exterior_66
+  - first:
+      213: 7961711222157408530
+    second: spr_building_exterior_67
+  - first:
+      213: 3827462356035505716
+    second: spr_building_exterior_68
+  - first:
+      213: -6508561964605789692
+    second: spr_building_exterior_69
+  - first:
+      213: 687709455386983854
+    second: spr_building_exterior_70
+  - first:
+      213: 5060555082671433975
+    second: spr_building_exterior_71
+  - first:
+      213: -3857847623201621724
+    second: spr_building_exterior_72
+  - first:
+      213: -5792098840717729121
+    second: spr_building_exterior_73
+  - first:
+      213: -2440557128266852057
+    second: spr_building_exterior_74
+  - first:
+      213: 6810214728605220929
+    second: spr_building_exterior_75
+  - first:
+      213: -7809376466766857101
+    second: spr_building_exterior_76
+  - first:
+      213: 799134998638431113
+    second: spr_building_exterior_77
+  - first:
+      213: -8778943929184242214
+    second: spr_building_exterior_78
+  - first:
+      213: -766932143582096960
+    second: spr_building_exterior_79
+  - first:
+      213: -7248846381628062152
+    second: spr_building_exterior_80
+  - first:
+      213: -4477405535849707893
+    second: spr_building_exterior_81
+  - first:
+      213: 2154325637412714187
+    second: spr_building_exterior_82
+  - first:
+      213: -5215290388718823472
+    second: spr_building_exterior_83
+  - first:
+      213: 4786878666423196084
+    second: spr_building_exterior_84
+  - first:
+      213: -8375253836671839462
+    second: spr_building_exterior_85
+  - first:
+      213: 5067540943193856591
+    second: spr_building_exterior_86
+  - first:
+      213: -6077773845317016619
+    second: spr_building_exterior_87
+  - first:
+      213: 1543959282482632015
+    second: spr_building_exterior_88
+  - first:
+      213: -8842133962202789980
+    second: spr_building_exterior_89
+  - first:
+      213: 6098262348215382398
+    second: spr_building_exterior_90
+  - first:
+      213: 6974827009917658707
+    second: spr_building_exterior_91
+  - first:
+      213: 1721752116844272321
+    second: spr_building_exterior_92
+  - first:
+      213: -4688879065777403879
+    second: spr_building_exterior_93
+  - first:
+      213: -2289554297001993921
+    second: spr_building_exterior_94
+  - first:
+      213: 469338527680726893
+    second: spr_building_exterior_95
+  - first:
+      213: -7512258583662469592
+    second: spr_building_exterior_96
+  - first:
+      213: -8912379531960200001
+    second: spr_building_exterior_97
+  - first:
+      213: 1349984190924824817
+    second: spr_building_exterior_98
+  - first:
+      213: 5986773730336720788
+    second: spr_building_exterior_99
+  - first:
+      213: 625757595668206015
+    second: spr_building_exterior_100
+  - first:
+      213: -6520754391306896485
+    second: spr_building_exterior_101
+  - first:
+      213: -5329752351812971683
+    second: spr_building_exterior_102
+  - first:
+      213: -5177931015603348372
+    second: spr_building_exterior_103
+  - first:
+      213: 7143592286975582036
+    second: spr_building_exterior_104
+  - first:
+      213: 5432345744253588416
+    second: spr_building_exterior_105
+  - first:
+      213: 7157297479857892705
+    second: spr_building_exterior_106
+  - first:
+      213: 6104039290606766555
+    second: spr_building_exterior_107
+  - first:
+      213: -3632069854667865760
+    second: spr_building_exterior_108
+  - first:
+      213: 2390638410405587278
+    second: spr_building_exterior_109
+  - first:
+      213: -3801648615042546750
+    second: spr_building_exterior_110
+  - first:
+      213: 964135684442463131
+    second: spr_building_exterior_111
+  - first:
+      213: 1236726112318649604
+    second: spr_building_exterior_112
+  - first:
+      213: -4609103304734213212
+    second: spr_building_exterior_113
+  - first:
+      213: 1018027028977497151
+    second: spr_building_exterior_114
+  - first:
+      213: -511974133903133645
+    second: spr_building_exterior_115
+  - first:
+      213: 4254201666791134949
+    second: spr_building_exterior_116
+  - first:
+      213: 4641366771229070049
+    second: spr_building_exterior_117
+  - first:
+      213: -3077110273489127903
+    second: spr_building_exterior_118
+  - first:
+      213: 5759547998890161344
+    second: spr_building_exterior_119
+  - first:
+      213: 1848577146907602487
+    second: spr_building_exterior_120
+  - first:
+      213: -2124788880201161965
+    second: spr_building_exterior_121
+  - first:
+      213: 4772455532416403972
+    second: spr_building_exterior_122
+  - first:
+      213: -4036309146818374200
+    second: spr_building_exterior_123
+  - first:
+      213: -6252432078977545667
+    second: spr_building_exterior_124
+  - first:
+      213: 674872311460502666
+    second: spr_building_exterior_125
+  - first:
+      213: -4488047683104767885
+    second: spr_building_exterior_126
+  - first:
+      213: -8955268258434435065
+    second: spr_building_exterior_127
+  - first:
+      213: -4421240844942468647
+    second: spr_building_exterior_128
+  - first:
+      213: 1917614066765762315
+    second: spr_building_exterior_129
+  - first:
+      213: -4708064042019345166
+    second: spr_building_exterior_130
+  - first:
+      213: -8315983849666791364
+    second: spr_building_exterior_131
+  - first:
+      213: 1488681449261145381
+    second: spr_building_exterior_132
+  - first:
+      213: -1990583436068156742
+    second: spr_building_exterior_133
+  - first:
+      213: 1472530023090489710
+    second: spr_building_exterior_134
+  - first:
+      213: 9070838608306432436
+    second: spr_building_exterior_135
+  - first:
+      213: -228204619659425482
+    second: spr_building_exterior_136
+  - first:
+      213: -6208092724855862010
+    second: spr_building_exterior_137
+  - first:
+      213: -2854566478131762057
+    second: spr_building_exterior_138
+  - first:
+      213: 1814956307869101865
+    second: spr_building_exterior_139
+  - first:
+      213: -8620689177509439394
+    second: spr_building_exterior_140
+  - first:
+      213: -224536308553592505
+    second: spr_building_exterior_141
+  - first:
+      213: 4773745356498817815
+    second: spr_building_exterior_142
+  - first:
+      213: -2124821519412715489
+    second: spr_building_exterior_143
+  - first:
+      213: 3425983026357995541
+    second: spr_building_exterior_144
+  - first:
+      213: -4979704247497806823
+    second: spr_building_exterior_145
+  - first:
+      213: -2198373622693971190
+    second: spr_building_exterior_146
+  - first:
+      213: -2073830757672164023
+    second: spr_building_exterior_147
+  - first:
+      213: -4579731397860077071
+    second: spr_building_exterior_148
+  - first:
+      213: 1251363574057087290
+    second: spr_building_exterior_149
+  - first:
+      213: -5781377494660784356
+    second: spr_building_exterior_150
+  - first:
+      213: -5343515899719227907
+    second: spr_building_exterior_151
+  - first:
+      213: -2862060630055543493
+    second: spr_building_exterior_152
+  - first:
+      213: 2507940039017420353
+    second: spr_building_exterior_153
+  - first:
+      213: 2388338052080338283
+    second: spr_building_exterior_154
+  - first:
+      213: -5961285151066916373
+    second: spr_building_exterior_155
+  - first:
+      213: -458587585170245586
+    second: spr_building_exterior_156
+  - first:
+      213: -1672208012032495553
+    second: spr_building_exterior_157
+  - first:
+      213: -1665659036401472885
+    second: spr_building_exterior_158
+  - first:
+      213: 6949493940653603562
+    second: spr_building_exterior_159
+  - first:
+      213: -669169415921762192
+    second: spr_building_exterior_160
+  - first:
+      213: 7436254463556783422
+    second: spr_building_exterior_161
+  - first:
+      213: -8349974936068486313
+    second: spr_building_exterior_162
+  - first:
+      213: 9182048627740353516
+    second: spr_building_exterior_163
+  - first:
+      213: 7237527682277431314
+    second: spr_building_exterior_164
+  - first:
+      213: 2775513040705789124
+    second: spr_building_exterior_165
+  - first:
+      213: -4917491955566064398
+    second: spr_building_exterior_166
+  - first:
+      213: -8966921263205838826
+    second: spr_building_exterior_167
+  - first:
+      213: -2831999288024982597
+    second: spr_building_exterior_168
+  - first:
+      213: 8805899800724874727
+    second: spr_building_exterior_169
+  - first:
+      213: -997726223477285539
+    second: spr_building_exterior_170
+  - first:
+      213: 1314749779975742712
+    second: spr_building_exterior_171
+  - first:
+      213: 3911468681225546638
+    second: spr_building_exterior_172
+  - first:
+      213: 4028541363840454563
+    second: spr_building_exterior_173
+  - first:
+      213: -5599839837954042216
+    second: spr_building_exterior_174
+  - first:
+      213: 5581463337015548132
+    second: spr_building_exterior_175
+  - first:
+      213: 6626749896440371419
+    second: spr_building_exterior_176
+  - first:
+      213: -4926484406112450684
+    second: spr_building_exterior_177
+  - first:
+      213: -5668496631533979766
+    second: spr_building_exterior_178
+  - first:
+      213: -1588403958706847351
+    second: spr_building_exterior_179
+  - first:
+      213: -7765835975620879287
+    second: spr_building_exterior_180
+  - first:
+      213: 85743506173290576
+    second: spr_building_exterior_181
+  - first:
+      213: -5130950668097614978
+    second: spr_building_exterior_182
+  - first:
+      213: -5279244959349330130
+    second: spr_building_exterior_183
+  - first:
+      213: -3712045197222966136
+    second: spr_building_exterior_184
+  - first:
+      213: 1786695617995877766
+    second: spr_building_exterior_185
+  - first:
+      213: -5481808260042616265
+    second: spr_building_exterior_186
+  - first:
+      213: -6971242055110814044
+    second: spr_building_exterior_187
+  - first:
+      213: -1686779005990082059
+    second: spr_building_exterior_188
+  - first:
+      213: 4858536559018469475
+    second: spr_building_exterior_189
+  - first:
+      213: 7896027756412693358
+    second: spr_building_exterior_190
+  - first:
+      213: 8081604865082569536
+    second: spr_building_exterior_191
+  - first:
+      213: 1051002708824877169
+    second: spr_building_exterior_192
+  - first:
+      213: 8856595778972694641
+    second: spr_building_exterior_193
+  - first:
+      213: 1258819600602146753
+    second: spr_building_exterior_194
+  - first:
+      213: 636879300809347387
+    second: spr_building_exterior_195
+  - first:
+      213: 2074838629846160958
+    second: spr_building_exterior_196
+  - first:
+      213: -8308047064217209661
+    second: spr_building_exterior_197
+  - first:
+      213: 5574203572668171947
+    second: spr_building_exterior_198
+  - first:
+      213: 5379159983937036749
+    second: spr_building_exterior_199
+  - first:
+      213: 3514358925304360387
+    second: spr_building_exterior_200
+  - first:
+      213: 1725888741938081964
+    second: spr_building_exterior_201
+  - first:
+      213: 3789893542434475076
+    second: spr_building_exterior_202
+  - first:
+      213: -3179796321924833394
+    second: spr_building_exterior_203
+  - first:
+      213: 6675160824806549402
+    second: spr_building_exterior_204
+  - first:
+      213: -8175156172694079391
+    second: spr_building_exterior_205
+  - first:
+      213: -8782583603472819216
+    second: spr_building_exterior_206
+  - first:
+      213: 1030126055099725770
+    second: spr_building_exterior_207
+  - first:
+      213: -7587039318958655524
+    second: spr_building_exterior_208
+  - first:
+      213: -8691690683328679872
+    second: spr_building_exterior_209
+  - first:
+      213: -1620851290881282007
+    second: spr_building_exterior_210
+  - first:
+      213: 8128164819716695728
+    second: spr_building_exterior_211
+  - first:
+      213: 57229166620184749
+    second: spr_building_exterior_212
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spr_building_exterior_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 368
+        width: 4
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005f831e4677ea100800000000000000
+      internalID: 121165515144623360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 368
+        width: 4
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d74973ab6ede5ba0800000000000000
+      internalID: -6098192291527571498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 368
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1506ac045147700800000000000000
+      internalID: 537077623581331909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_3
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 368
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06ee60c236b1aad0800000000000000
+      internalID: -2692670773097732598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 368
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59dac363f6357d530800000000000000
+      internalID: 3879661341119393173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 368
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed24834240dfcf300800000000000000
+      internalID: 287382670474232542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_6
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 353
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e71a8da6d5de3d40800000000000000
+      internalID: 5566121307487737831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_7
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 353
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786ee573663097790800000000000000
+      internalID: -7531985164249930105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_8
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 240
+        width: 84
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de3ca132a2359d20800000000000000
+      internalID: 3284587175436107475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_9
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 336
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cd4bdc478379e90800000000000000
+      internalID: -7019079419915084753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07348b6e102e3fc10800000000000000
+      internalID: 2086259550196351856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_11
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 287
+        width: 84
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fd0f97691351500800000000000000
+      internalID: 366253467061247829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_12
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 320
+        width: 72
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5c76920b58a8260800000000000000
+      internalID: 7100634754158413284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_13
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c927bb8a6f1c1c0800000000000000
+      internalID: -4485032549324514296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 288
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51c4ab4e0cea0380800000000000000
+      internalID: -9004124958831099553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 272
+        width: 81
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703b3ac28a9715db0800000000000000
+      internalID: -4804925564217216249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_16
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 288
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4a3f8d1b2498d80800000000000000
+      internalID: -8247987910935862096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_17
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 80
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6674b335ec5510f40800000000000000
+      internalID: 5692925748621035366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 252
+        width: 48
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12214ebff895ca300800000000000000
+      internalID: 264684953049240097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_19
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 253
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9c74f11ff9ff0f0800000000000000
+      internalID: -1080969527584896528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_20
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 208
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0768afbd113bcd940800000000000000
+      internalID: 5322325748931528304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_21
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 224
+        width: 80
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5f393fafb180c70800000000000000
+      internalID: 8937424225159083486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_22
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 80
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c2ab0f192c1c520800000000000000
+      internalID: 2720669581973269642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 193
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7b91950d3d66b20800000000000000
+      internalID: 3127419883056904132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_24
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 193
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3dc15532a468c090800000000000000
+      internalID: -8014044889063764677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_25
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 193
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67108d8e904afae30800000000000000
+      internalID: 4517009313744028022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 80
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86957b3886606ca00800000000000000
+      internalID: 776315031724185960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_27
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 161
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f454d6124192970e0800000000000000
+      internalID: -2271739370594810545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_28
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 128
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d623ab34e1d821eb0800000000000000
+      internalID: -4750579495797640595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_29
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 167
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85eb1ae2852a455a0800000000000000
+      internalID: -6533418659784573352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_30
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 135
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c32c78d37e392150800000000000000
+      internalID: 5848274258391475139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_31
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 105
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef980c041486cbc0800000000000000
+      internalID: -3763175216985366557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_building_exterior_32
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 73
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353dc2863eb7ecd50800000000000000
+      internalID: 6759476307365253971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
