@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Person : MonoBehaviour
+public class Sign : MonoBehaviour
 {
     public GameObject dialogBox;
     public Text dialogText;
