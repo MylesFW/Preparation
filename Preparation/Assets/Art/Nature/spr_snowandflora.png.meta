@@ -41,6 +41,24 @@ TextureImporter:
   - first:
       213: -6721584030934140571
     second: obj_tree_tall_2
+  - first:
+      213: 470272689250586272
+    second: spr_snowandflora_570
+  - first:
+      213: 6657081142545930781
+    second: spr_snowandflora_571
+  - first:
+      213: 6711706308208897659
+    second: spr_snowandflora_572
+  - first:
+      213: 3098561549330806895
+    second: spr_snowandflora_573
+  - first:
+      213: 2477112496846143786
+    second: spr_snowandflora_574
+  - first:
+      213: -2128624981305242354
+    second: spr_snowandflora_575
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -6101,7 +6119,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 256
+        y: 257
         width: 16
         height: 16
       alignment: 0
@@ -6776,8 +6794,8 @@ TextureImporter:
         y: 224
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.48921442, y: 0.26271152}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6839,8 +6857,8 @@ TextureImporter:
         y: 224
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.55186176, y: 0.23550701}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -8222,7 +8240,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 176
+        y: 184
         width: 16
         height: 16
       alignment: 0
@@ -9926,8 +9944,8 @@ TextureImporter:
         y: 128
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.50345516, y: 0.48618603}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -11489,6 +11507,762 @@ TextureImporter:
       bones: []
       spriteID: 5697b34bfe228b2a0800000000000000
       internalID: -6721584030934140571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_33
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 208
+        width: 38
+        height: 22
+      alignment: 9
+      pivot: {x: 0.49445945, y: 0.8509029}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940d505258bc6b8a0800000000000000
+      internalID: -6289616056864092087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_34
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 208
+        width: 42
+        height: 28
+      alignment: 9
+      pivot: {x: 0.4980309, y: 0.8071943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c899a9294d89eed0800000000000000
+      internalID: -2384219182344857404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_37
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 225
+        width: 29
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4723409}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117603a91fc036590800000000000000
+      internalID: -7682282307550419183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_38
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 225
+        width: 25
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5031711, y: 0.4539417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e841470ce1ff73e0800000000000000
+      internalID: -2053656909021361946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_39
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 225
+        width: 30
+        height: 20
+      alignment: 9
+      pivot: {x: 0.49777552, y: 0.52701735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ccaeba8ee3e4050800000000000000
+      internalID: 5786631740255292417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_42
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 196
+        width: 20
+        height: 21
+      alignment: 9
+      pivot: {x: 0.48759422, y: 0.42910913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57260618f8e758e0800000000000000
+      internalID: -1704637781717407908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_43
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 161
+        width: 60
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1910285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0889a293f50a0d160800000000000000
+      internalID: 7048309747676256384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_44
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 160
+        width: 60
+        height: 48
+      alignment: 9
+      pivot: {x: 0.50929487, y: 0.09334246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73c9f5b793abe3e0800000000000000
+      internalID: -2023343735584472196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_47
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 210
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6ea82a156a0b5f0800000000000000
+      internalID: -742911068966558007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_48
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 181
+        width: 46
+        height: 28
+      alignment: 9
+      pivot: {x: 0.48741433, y: 0.59156746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ed1759d5021e350800000000000000
+      internalID: 6044147761219231280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_49
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 184
+        width: 44
+        height: 32
+      alignment: 9
+      pivot: {x: 0.48365155, y: 0.594285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e99bd83eae6c3a0800000000000000
+      internalID: -6645365937082360237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_57
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 144
+        width: 54
+        height: 30
+      alignment: 9
+      pivot: {x: 0.50765806, y: 0.10301056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e59b49b04ad18080800000000000000
+      internalID: -9186821793337600544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_58
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 149
+        width: 3
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4861876, y: 0.06340332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2639236451858cb30800000000000000
+      internalID: 4307789891975156578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_62
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 144
+        width: 8
+        height: 75
+      alignment: 9
+      pivot: {x: 0.48810196, y: 0.03821635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab42ff15d7e09d70800000000000000
+      internalID: 9047986553937349547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_63
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 144
+        width: 56
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5353922, y: 0.03651778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa3a6b249e11a9c0800000000000000
+      internalID: -3917816579103245571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_67
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 144
+        width: 41
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49761367, y: 0.040468596}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3316e11ca08f7d0800000000000000
+      internalID: -2884543736776150084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_68
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 144
+        width: 31
+        height: 75
+      alignment: 9
+      pivot: {x: 0.48782152, y: 0.04298299}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd749c42d74a6500800000000000000
+      internalID: 390203286274473396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_72
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 113
+        width: 46
+        height: 37
+      alignment: 9
+      pivot: {x: 0.46847484, y: 0.038651336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21c8fdedfed5f8b0800000000000000
+      internalID: -5118940219236105942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_73
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 113
+        width: 8
+        height: 39
+      alignment: 9
+      pivot: {x: 0.6658306, y: 0.06170498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d60e79e71643b2a0800000000000000
+      internalID: -6722952750218475815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_559
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 115
+        width: 10
+        height: 39
+      alignment: 9
+      pivot: {x: 0.45210725, y: 0.025976915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6cdf30d91eb62d0800000000000000
+      internalID: -3284283438743566627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_560
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 112
+        width: 13
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5000012, y: 0.07914848}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccca75d2e20ba5ce0800000000000000
+      internalID: -1415625420478894900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_561
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 112
+        width: 13
+        height: 46
+      alignment: 9
+      pivot: {x: 0.46599403, y: 0.03147324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1c30bb4923953c0800000000000000
+      internalID: -4370406349012221453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_562
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 112
+        width: 13
+        height: 46
+      alignment: 9
+      pivot: {x: 0.49999884, y: 0.03266127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5a0ff87281696c0800000000000000
+      internalID: -4137092649495517739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_563
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 112
+        width: 13
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5140123, y: 0.046480708}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf7a451e8c0b3650800000000000000
+      internalID: 6213573915269824460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_564
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 112
+        width: 11
+        height: 31
+      alignment: 9
+      pivot: {x: 0.50551814, y: 0.049440198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5317294fd175507f0800000000000000
+      internalID: -647015185288892107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_565
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 112
+        width: 11
+        height: 31
+      alignment: 9
+      pivot: {x: 0.50551814, y: 0.05727608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092dfb1764c82de60800000000000000
+      internalID: 7985599323465306768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_566
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 112
+        width: 11
+        height: 31
+      alignment: 9
+      pivot: {x: 0.511039, y: 0.090578385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1515732bff892520800000000000000
+      internalID: 2677829762242909468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_567
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 65
+        width: 45
+        height: 37
+      alignment: 9
+      pivot: {x: 0.46070507, y: 0.038172543}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86edcba65f5083240800000000000000
+      internalID: 4771570356814929512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_568
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 65
+        width: 8
+        height: 39
+      alignment: 9
+      pivot: {x: 0.66722107, y: 0.029246794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369ae61df0bd4e140800000000000000
+      internalID: 4748160768140028259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_569
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 67
+        width: 10
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5621811, y: 0.04051424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d67f1dbeedc1880800000000000000
+      internalID: -8638784880782119565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_570
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 67
+        width: 21
+        height: 21
+      alignment: 9
+      pivot: {x: 0.45680964, y: 0.0817377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae495ee48eb68600800000000000000
+      internalID: 470272689250586272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_571
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 68
+        width: 8
+        height: 22
+      alignment: 9
+      pivot: {x: 0.3150215, y: 0.08989993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ad6664704b26c50800000000000000
+      internalID: 6657081142545930781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_572
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 67
+        width: 8
+        height: 22
+      alignment: 9
+      pivot: {x: 0.21954918, y: 0.08773041}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e2a81c355c42d50800000000000000
+      internalID: 6711706308208897659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_573
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 67
+        width: 10
+        height: 24
+      alignment: 9
+      pivot: {x: 0.41884765, y: 0.10816288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68fb8eef4d400b20800000000000000
+      internalID: 3098561549330806895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_574
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 65
+        width: 28
+        height: 27
+      alignment: 9
+      pivot: {x: 0.4951172, y: 0.558253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21023b01b8706220800000000000000
+      internalID: 2477112496846143786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_snowandflora_575
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 65
+        width: 61
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5000005, y: 0.52587664}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d47418bda9572e0800000000000000
+      internalID: -2128624981305242354
       vertices: []
       indices: 
       edges: []
