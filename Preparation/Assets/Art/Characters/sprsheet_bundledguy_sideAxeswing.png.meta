@@ -1,0 +1,684 @@
+fileFormatVersion: 2
+guid: 202786ed3d6e93a45abb95c494b155d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1236098784900828654
+    second: sprsheet_bundledguy_sideAxeswing_0
+  - first:
+      213: -2849569084993830537
+    second: sprsheet_bundledguy_sideAxeswing_1
+  - first:
+      213: 3524820811279790084
+    second: sprsheet_bundledguy_sideAxeswing_2
+  - first:
+      213: 3595230066165011001
+    second: sprsheet_bundledguy_sideAxeswing_3
+  - first:
+      213: -4297747196530092847
+    second: sprsheet_bundledguy_sideAxeswing_4
+  - first:
+      213: -6955262519881656555
+    second: sprsheet_bundledguy_sideAxeswing_5
+  - first:
+      213: -4750970235053915464
+    second: sprsheet_bundledguy_sideAxeswing_6
+  - first:
+      213: -4992002436151908246
+    second: sprsheet_bundledguy_sideAxeswing_7
+  - first:
+      213: 7432182160134776096
+    second: sprsheet_bundledguy_sideAxeswing_8
+  - first:
+      213: -2734713730898914506
+    second: sprsheet_bundledguy_sideAxeswing_9
+  - first:
+      213: -5515423170308278165
+    second: sprsheet_bundledguy_sideAxeswing_10
+  - first:
+      213: -6399479476354712214
+    second: sprsheet_bundledguy_sideAxeswing_11
+  - first:
+      213: -6412847968800420809
+    second: sprsheet_bundledguy_sideAxeswing_12
+  - first:
+      213: 6812406982715675629
+    second: sprsheet_bundledguy_sideAxeswing_13
+  - first:
+      213: -4111078998458970632
+    second: sprsheet_bundledguy_sideAxeswing_14
+  - first:
+      213: 2314756666805203520
+    second: sprsheet_bundledguy_sideAxeswing_15
+  - first:
+      213: -8788569847463769024
+    second: sprsheet_bundledguy_sideAxeswing_16
+  - first:
+      213: -3498390160171591382
+    second: sprsheet_bundledguy_sideAxeswing_17
+  - first:
+      213: -8527035558587292912
+    second: sprsheet_bundledguy_sideAxeswing_18
+  - first:
+      213: -982309894083323255
+    second: sprsheet_bundledguy_sideAxeswing_19
+  - first:
+      213: 9013910803178739368
+    second: sprsheet_bundledguy_sideAxeswing_20
+  - first:
+      213: -1331857698035496824
+    second: sprsheet_bundledguy_sideAxeswing_21
+  - first:
+      213: -3031770288951915657
+    second: sprsheet_bundledguy_sideAxeswing_22
+  - first:
+      213: 6316979135325097334
+    second: sprsheet_bundledguy_sideAxeswing_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 195
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed4e45bb41872110800000000000000
+      internalID: 1236098784900828654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 194
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771020ec30c4478d0800000000000000
+      internalID: -2849569084993830537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 197
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4007c314addaae030800000000000000
+      internalID: 3524820811279790084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 197
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932d19362b2d4e130800000000000000
+      internalID: 3595230066165011001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_4
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 131
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d49468f1b55b54c0800000000000000
+      internalID: -4297747196530092847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_5
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 130
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5179dd6b691f97f90800000000000000
+      internalID: -6955262519881656555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_6
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 133
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b248213eb9211eb0800000000000000
+      internalID: -4750970235053915464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_7
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 133
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68e74bab38d8bab0800000000000000
+      internalID: -4992002436151908246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_8
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 100
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02524d81c4a642760800000000000000
+      internalID: 7432182160134776096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_9
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 94
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6331363d9585c0ad0800000000000000
+      internalID: -2734713730898914506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_10
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 74
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68f0db39d74573b0800000000000000
+      internalID: -5515423170308278165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_11
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 74
+        width: 24
+        height: 27
+      alignment: 9
+      pivot: {x: 0.50448865, y: 0.093063354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d7978725b7037a0800000000000000
+      internalID: -6399479476354712214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 74
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cc015cfbcf007a0800000000000000
+      internalID: -6412847968800420809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_13
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 81
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3982e9e088a8e50800000000000000
+      internalID: 6812406982715675629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_14
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 89
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdc84dae6382f6c0800000000000000
+      internalID: -4111078998458970632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_15
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 10
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0423462aceaaf1020800000000000000
+      internalID: 2314756666805203520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_16
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 30
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c863e994ab80680800000000000000
+      internalID: -8788569847463769024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_17
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 36
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2910414fa8337fc0800000000000000
+      internalID: -3498390160171591382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_18
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 10
+        width: 24
+        height: 27
+      alignment: 9
+      pivot: {x: 0.504488, y: 0.08907353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013a74f6652e9a980800000000000000
+      internalID: -8527035558587292912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 10
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.495512, y: 0.08595666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98adfc71b522e52f0800000000000000
+      internalID: -982309894083323255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_20
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 17
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a656842e18d71d70800000000000000
+      internalID: 9013910803178739368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_21
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 25
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8888939ea7a448de0800000000000000
+      internalID: -1331857698035496824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_22
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 74
+        width: 37
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5116453, y: 0.045562506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b00763cfcfce5d0800000000000000
+      internalID: -3031770288951915657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprsheet_bundledguy_sideAxeswing_23
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 8
+        width: 43
+        height: 35
+      alignment: 9
+      pivot: {x: 0.4974949, y: 0.10298007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d4b960e0b6aa750800000000000000
+      internalID: 6316979135325097334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
