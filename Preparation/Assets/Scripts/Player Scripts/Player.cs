@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerState
+{
+    walk,
+    attack,
+    interact
+}
+
 public class Player : MonoBehaviour
 {
 
+    public PlayerState currentState;
     public float movementSpeed;
     private Rigidbody2D myRigidBody;
     private Vector3 change;
@@ -14,6 +22,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentState = PlayerState.walk;
         animator = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
         transform.position = startingPosition.initialValue;
@@ -27,12 +36,29 @@ public class Player : MonoBehaviour
             // Input.GetAxis => creates a "floating" feeling
             // Input.GetAxisRaw => feels more responsive
         change.y = Input.GetAxisRaw("Vertical");
-        UpdateAnimationAndMove();
+        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack)
+        {
+            StartCoroutine(AttackCo());
+        }
+        else if (currentState == PlayerState.walk)
+        {
+            UpdateAnimationAndMove();
+        }
 
 
 
         //Debug.Log(change);
             // Debug.Log(var/"var") => acts as print statement
+    }
+
+    private IEnumerator AttackCo()
+    {
+        animator.SetBool("attacking", true);
+        currentState = PlayerState.attack;
+        yield return null;
+        animator.SetBool("attacking", false);
+        yield return new WaitForSeconds(.33f);
+        currentState = PlayerState.walk;
     }
 
     void UpdateAnimationAndMove()
