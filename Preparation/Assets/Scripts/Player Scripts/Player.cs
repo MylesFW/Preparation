@@ -4,9 +4,11 @@ using UnityEngine;
 
 public enum PlayerState
 {
+    hp,
+    ap,
     walk,
     attack,
-    interact
+    interact,
 }
 
 public class Player : MonoBehaviour
@@ -14,6 +16,10 @@ public class Player : MonoBehaviour
 
     public PlayerState currentState;
     public float movementSpeed;
+    public PlayerState currentHp;
+    public float HP;
+    public PlayerState currentAp;
+    public float AP;
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator animator;
