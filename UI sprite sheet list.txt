@@ -1,0 +1,33 @@
+*****UI*****
+
+****Backing (background that the buttons and shit go to*****
+
+XPause backing
+XLarge Backing 
+Xmedium backing 
+Xsmall backing
+XDialogue backing
+
+********Buttons/Clickabls*******
+-Large Button    x1
+-Medium button   x2
+-Small Buttons 
+-small Icon button
+-scroll bar slot H/V
+-scroll bar	 H/V
+-Tabs
+
+
+***Symbols/Icons***************
+-Check mark
+-X mark
+-3 dots
+-Gear wheel/wrench
+-3 horiz lines 
+-Pause
+-arrows
+-pencil
+-Lines
+*******badass font************* 
+-badass font
+

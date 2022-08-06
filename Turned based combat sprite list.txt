@@ -1,0 +1,39 @@
+**Combat sprites**********
+******Anims***************
+
+***Attact anims***********
+-Axe swing
+-Hand gun 
+-Rifle
+-shotgun
+
+
+********partical Effects**
+-Slash
+-Gun smoke
+-Muzzle Flash
+-Bullet trace
+-Blood (lots)
+
+********Defense anims*****
+-Bandage
+-Guard
+
+********Sprites***********
+-bundled guy
+-backdrop 1 per location
+
+*********UI***************
+-action Buttons
+-menu buttons
+-small buttons
+-timer
+
+******Cutscenes***********
+-In 
+-out
+
+
+
+
+
