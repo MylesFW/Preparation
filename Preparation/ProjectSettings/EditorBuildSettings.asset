@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: d1b10809405f91b40ade7ad5911f1b83
+  - enabled: 1
+    path: Assets/Scenes/Myles_Test_Scene.unity
+    guid: 107753e5ceee4ec42b487622e8250e71
+  - enabled: 1
+    path: Assets/Scenes/Brennan_Test_Scene.unity
+    guid: 4232231b442737b47a091b319483cacf
+  - enabled: 1
+    path: Assets/Scenes/Combat.unity
+    guid: 4708924fb785ee248a3bd96863b7ecb2
   m_configObjects: {}
