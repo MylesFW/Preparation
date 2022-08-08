@@ -3130,11 +3130,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 283e8477e8a8a0f418ff3b40d14f25d0, type: 2}
     - target: {fileID: 7654694024525669066, guid: 616d9633610538e43802348771be859d, type: 3}
       propertyPath: playerPosition.x
-      value: -1.5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7654694024525669066, guid: 616d9633610538e43802348771be859d, type: 3}
       propertyPath: playerPosition.y
-      value: 0.3
+      value: -0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 616d9633610538e43802348771be859d, type: 3}
