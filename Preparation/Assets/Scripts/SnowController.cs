@@ -14,15 +14,15 @@ public class SnowController : MonoBehaviour{
   //Attributes with range sliders for editing
   
   //Flake size
-  [Range(0, 1)]
+  [Range(0, 5)]
   public float SizeMin = 1.0f;
-  [Range(0, 1)]
+  [Range(0, 5)]
   public float SizeMax = 1.0f;
    [Range(0, 2)]
   public float SizeMod = 1.0f;
   
   //Noise Generator
-  [Range(0, 100)]
+  [Range(0, 500)]
   public float Amount = 5.0f;
   [Range(0, 2)]
   public float Freq = 1.0f;
@@ -35,7 +35,7 @@ public class SnowController : MonoBehaviour{
   [Range(0, 1)]
   public float Swirl = 0.1f;
   
-  
+  // Steve H. was here
   
   
   
