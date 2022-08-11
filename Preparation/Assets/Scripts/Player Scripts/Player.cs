@@ -4,8 +4,6 @@ using UnityEngine;
 
 public enum PlayerState
 {
-    hp,
-    ap,
     walk,
     attack,
     interact,
@@ -16,10 +14,6 @@ public class Player : MonoBehaviour
 
     public PlayerState currentState;
     public float movementSpeed;
-    public PlayerState currentHp;
-    public float HP;
-    public PlayerState currentAp;
-    public float AP;
     private Rigidbody2D myRigidBody;
     private Vector3 change;
     private Animator animator;
@@ -63,7 +57,7 @@ public class Player : MonoBehaviour
         currentState = PlayerState.attack;
         yield return null;
         animator.SetBool("attacking", false);
-        yield return new WaitForSeconds(.33f);
+        yield return new WaitForSeconds(.2f);
         currentState = PlayerState.walk;
     }
 
@@ -84,6 +78,7 @@ public class Player : MonoBehaviour
 
     void MoveCharacter()
     {
+        change.Normalize();
         myRigidBody.MovePosition(transform.position + change * movementSpeed * Time.fixedDeltaTime);
     }
 }
