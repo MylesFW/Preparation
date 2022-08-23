@@ -237,20 +237,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3473019398609686728, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
   m_PrefabInstance: {fileID: 939298451}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &266371704
-MonoBehaviour:
+--- !u!61 &266371704
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266371698}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd08a5dbc4221944bb248c8d705d5126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 10.27
-  knockTime: 22.83
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.001992941, y: 0.6682904}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.125}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.61691475, y: 1.270592}
+  m_EdgeRadius: 0
 --- !u!1 &271026576
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,9 +372,10 @@ GameObject:
   m_Component:
   - component: {fileID: 506512101}
   - component: {fileID: 506512102}
+  - component: {fileID: 506512103}
   m_Layer: 0
   m_Name: attack_left_hitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -411,6 +424,20 @@ PolygonCollider2D:
       - {x: -1.1147218, y: 0.83207214}
       - {x: -0.8142315, y: 0.48665643}
       - {x: 0.12890148, y: 0.6675133}
+--- !u!114 &506512103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506512100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd08a5dbc4221944bb248c8d705d5126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 5
+  knockTime: 0.2
 --- !u!1 &530930786
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,9 +448,10 @@ GameObject:
   m_Component:
   - component: {fileID: 530930787}
   - component: {fileID: 530930788}
+  - component: {fileID: 530930789}
   m_Layer: 0
   m_Name: attack_up_hitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -472,6 +500,20 @@ PolygonCollider2D:
       - {x: -0.26763266, y: 0.6511408}
       - {x: 0.27958238, y: 0.65113974}
       - {x: 0.66022336, y: 1.6876495}
+--- !u!114 &530930789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530930786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd08a5dbc4221944bb248c8d705d5126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 5
+  knockTime: 0.2
 --- !u!1 &595785756
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,9 +524,10 @@ GameObject:
   m_Component:
   - component: {fileID: 595785757}
   - component: {fileID: 595785758}
+  - component: {fileID: 595785759}
   m_Layer: 0
   m_Name: attack_right_hitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -533,6 +576,20 @@ PolygonCollider2D:
       - {x: 0.79739636, y: 0.4948815}
       - {x: 1.0937744, y: 0.82384706}
       - {x: 0.8115071, y: 1.160963}
+--- !u!114 &595785759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595785756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd08a5dbc4221944bb248c8d705d5126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 5
+  knockTime: 0.2
 --- !u!1 &739521219
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,11 +911,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3473019398609686743, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
       propertyPath: m_Size.y
-      value: 0.3116958
+      value: 0.20806408
       objectReference: {fileID: 0}
     - target: {fileID: 3473019398609686743, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
       propertyPath: m_Offset.y
-      value: 0.17168605
+      value: 0.1557427
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473019398609686743, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
@@ -1615,9 +1676,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1393855963}
   - component: {fileID: 1393855964}
+  - component: {fileID: 1393855965}
   m_Layer: 0
   m_Name: attack_down_hitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1667,6 +1729,20 @@ PolygonCollider2D:
       - {x: 0.6497524, y: 0.116838604}
       - {x: 0.113613605, y: 0.8844196}
       - {x: 0.014300466, y: 0.9652861}
+--- !u!114 &1393855965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393855962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd08a5dbc4221944bb248c8d705d5126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 5
+  knockTime: 0.2
 --- !u!1001 &1419722731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2939,9 +3015,11 @@ GameObject:
   - component: {fileID: 2062380564}
   - component: {fileID: 2062380565}
   - component: {fileID: 2062380563}
+  - component: {fileID: 2062380567}
+  - component: {fileID: 2062380566}
   m_Layer: 0
   m_Name: Sprite-Enemy-Snowman_0
-  m_TagString: Enemy
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3024,7 +3102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062380559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.43, y: 1.09, z: 0}
+  m_LocalPosition: {x: -0.95, y: 3.3, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3043,7 +3121,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.025887728, y: 1.3294717}
+  m_Offset: {x: 0.029290944, y: 0.30539295}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.1}
@@ -3054,7 +3132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1043468, y: 2.8337529}
+  m_Size: {x: 1.6569617, y: 0.6042432}
   m_EdgeRadius: 0
 --- !u!50 &2062380564
 Rigidbody2D:
@@ -3068,7 +3146,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -3091,14 +3169,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   health: 10
-  enemyName: Snowman Test
+  enemyName: Snowman
   baseAttack: 5
   moveSpeed: 2
   target: {fileID: 0}
   chaseRadius: 5
   attackRadius: 2
   homePosition: {fileID: 0}
-  anim: {fileID: 2062380560}
+  anim: {fileID: 0}
+--- !u!114 &2062380566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062380559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd08a5dbc4221944bb248c8d705d5126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 5
+  knockTime: 5
+--- !u!61 &2062380567
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062380559}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.007932305, y: 1.2866892}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.1}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 4, y: 4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.1915252, y: 2.7070992}
+  m_EdgeRadius: 0
 --- !u!1 &2122055163
 GameObject:
   m_ObjectHideFlags: 0

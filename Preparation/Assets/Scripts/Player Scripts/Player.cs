@@ -7,6 +7,8 @@ public enum PlayerState
     walk,
     attack,
     interact,
+    stagger,
+    idle
 }
 
 public class Player : MonoBehaviour
@@ -36,11 +38,11 @@ public class Player : MonoBehaviour
             // Input.GetAxis => creates a "floating" feeling
             // Input.GetAxisRaw => feels more responsive
         change.y = Input.GetAxisRaw("Vertical");
-        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack)
+        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
         {
             StartCoroutine(AttackCo());
         }
-        else if (currentState == PlayerState.walk)
+        else if (currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
             UpdateAnimationAndMove();
         }
@@ -80,5 +82,22 @@ public class Player : MonoBehaviour
     {
         change.Normalize();
         myRigidBody.MovePosition(transform.position + change * movementSpeed * Time.fixedDeltaTime);
+    }
+
+    public void Knock(float knockTime)
+    {
+        StartCoroutine(KnockCo(knockTime));
+    }
+
+    private IEnumerator KnockCo(float knockTime)
+    {
+        if (myRigidBody != null)
+        {
+            yield return new WaitForSeconds(knockTime);
+            myRigidBody.velocity = Vector2.zero;
+            currentState = PlayerState.idle;
+            myRigidBody.velocity = Vector2.zero;
+
+        }
     }
 }

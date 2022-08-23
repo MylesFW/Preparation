@@ -10,28 +10,32 @@ public class KnockBack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        //if (other.gameObject.CompareTag("breakable") && this.gameObject.CompareTag("Player"))
+        //{
+        //    other.GetComponent<pot>().Smash();
+        //}
+        if (other.gameObject.CompareTag("enemy") || other.gameObject.CompareTag("Player"))
         {
-            Rigidbody2D Enemy = other.GetComponent<Rigidbody2D>();
-            if (Enemy != null)
+            Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
+            if (hit != null)
             {
-                Enemy.GetComponent<WorldEnemy>().currentState = EnemyState.stagger;
-                Vector2 difference = Enemy.transform.position - transform.position;
+                Vector2 difference = hit.transform.position - transform.position;
                 difference = difference.normalized * thrust;
-                Enemy.AddForce(difference, ForceMode2D.Impulse);
-                StartCoroutine (KnockCo(Enemy));
+                hit.AddForce(difference, ForceMode2D.Impulse);
                 Debug.Log("Coroutine Started - KnockBack");
-            }
-        }
-    }
 
-    private IEnumerator KnockCo(Rigidbody2D Enemy)
-    {
-        if (Enemy != null)
-        {
-            yield return new WaitForSeconds(knockTime);
-            Enemy.velocity = Vector2.zero;
-            Enemy.GetComponent<WorldEnemy>().currentState = EnemyState.idle;
+                if (other.gameObject.CompareTag("enemy"))
+                {
+                   hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
+                    other.GetComponent<Enemy>().Knock(hit, knockTime);
+                }
+                if (other.gameObject.CompareTag("Player"))
+                {
+                    hit.GetComponent<Player>().currentState = PlayerState.stagger;
+                    other.GetComponent<Player>().Knock(knockTime);
+                }
+
+            }
         }
     }
 }

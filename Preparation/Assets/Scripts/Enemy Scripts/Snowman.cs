@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Snowman : WorldEnemy
+public class Snowman : Enemy
 {
     private Rigidbody2D myRidgedBody;
     public Transform target;

@@ -2,39 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy
-{
-    EnemyBase _base;
-    int level;
+public enum EnemyState{
+    idle,
+    walk,
+    attack,
+    stagger
+}
 
-    public Enemy(EnemyBase eBase, int eLevel)
+
+public class Enemy : MonoBehaviour
+{
+    public EnemyState currentState;
+    public int health;
+    public string enemyName;
+    public int baseAttack;
+    public float moveSpeed;
+
+    public void Knock(Rigidbody2D myRigidBody, float knockTime)
     {
-        _base = eBase;
-        level = eLevel;
+        StartCoroutine(KnockCo(myRigidBody, knockTime));
     }
-    public int MaxHp
+
+    private IEnumerator KnockCo(Rigidbody2D myRigidBody, float knockTime)
     {
-        get { return Mathf.FloorToInt((_base.MaxHp * level) / 100f) + 5; }
-    }
-    public int MaxAp
-    {
-        get { return Mathf.FloorToInt((_base.MaxAp * level) / 100f) + 5; }
-    }
-    public int LightAttack
-    {
-        get { return Mathf.FloorToInt((_base.LightAttack * level) / 100f) + 5; }
-    }
-    public int HeavyAttack
-    {
-        get { return Mathf.FloorToInt((_base.HeavyAttack * level) / 100f) + 10; }
-    }
-    public int LightDefense
-    {
-        get { return Mathf.FloorToInt((_base.LightDefense * level) / 100f) + 5; }
-    }
-    public int HeavyDefense
-    {
-        get { return Mathf.FloorToInt((_base.HeavyDefense * level) / 100f) + 10; }
+        if (myRigidBody != null)
+        {
+            yield return new WaitForSeconds(knockTime);
+            myRigidBody.velocity = Vector2.zero;
+            currentState = EnemyState.idle;
+            myRigidBody.velocity = Vector2.zero;
+
+        }
     }
 }
 
