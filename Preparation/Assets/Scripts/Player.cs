@@ -90,12 +90,18 @@ public class Player : MonoBehaviour
 
     public void Knock(float knockTime, float damage)
     {
-        currentHealth.initialValue -= damage;
-        if (currentHealth.initialValue > 0)
+        currentHealth.RuntimeValue -= damage;
+        //sends signal to the SignalListener which then displays the number of health
+        playerHealthSignal.Raise();
+        if (currentHealth.RuntimeValue > 0)
         {
-            //sends signal to the SignalListener which then displays the number of health
-            playerHealthSignal.Raise();
+
             StartCoroutine(KnockCo(knockTime));
+        }
+        else
+        {
+            Debug.Log("YOU HAVE DIED.");
+            this.gameObject.SetActive(false);
         }
     }
 
