@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78a5a4d5aee09ec438c5113384792483, type: 3}
-  m_Name: HeartContainers
+  m_Script: {fileID: 11500000, guid: 4004ce9e75df6c84bb93d447ed3a518c, type: 3}
+  m_Name: ContextClueOn
   m_EditorClassIdentifier: 
-  initialValue: 3
-  RuntimeValue: 3
+  listeners: []
