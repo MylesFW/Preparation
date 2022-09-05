@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     private Vector3 change;
     private Animator animator;
     public VectorValue startingPosition;
+    public FloatValue currentHealth;
+    public SignalSender playerHealthSignal;
 
     // Start is called before the first frame update
     void Start()
@@ -83,10 +85,24 @@ public class Player : MonoBehaviour
         change.Normalize();
         myRigidBody.MovePosition(transform.position + change * movementSpeed * Time.fixedDeltaTime);
     }
+    
+    //player knockback will occurr if the player has more than zero health
 
-    public void Knock(float knockTime)
+    public void Knock(float knockTime, float damage)
     {
-        StartCoroutine(KnockCo(knockTime));
+        currentHealth.RuntimeValue -= damage;
+        //sends signal to the SignalListener which then displays the number of health
+        playerHealthSignal.Raise();
+        if (currentHealth.RuntimeValue > 0)
+        {
+
+            StartCoroutine(KnockCo(knockTime));
+        }
+        else
+        {
+            Debug.Log("YOU HAVE DIED.");
+            this.gameObject.SetActive(false);
+        }
     }
 
     private IEnumerator KnockCo(float knockTime)

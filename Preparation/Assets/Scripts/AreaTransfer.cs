@@ -7,6 +7,9 @@ public class AreaTransfer : MonoBehaviour
 {
 
     public Vector2 cameraChange;
+        //Area transfers for different sized areas. 2 Vector2 camera changes will need to be added for the min and max coords
+            //public Vector2 cameraMinChange;
+            //public Vector2 cameraMaxChange;
     public Vector3 playerChange;
     private MainCameraMovement cam;
     public bool needText;
@@ -33,6 +36,9 @@ public class AreaTransfer : MonoBehaviour
         {
             cam.minPosition += cameraChange;
             cam.maxPosition += cameraChange;
+                //Area transfer to different sized rooms. Replace previous with this
+                    //cam.minPosition += cameraMinChange;
+                    //cam.maxPosition += cameraMaxChange;
             other.transform.position += playerChange;
             if (needText)
             {

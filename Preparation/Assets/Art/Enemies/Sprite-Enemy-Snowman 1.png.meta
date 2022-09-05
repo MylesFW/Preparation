@@ -1,49 +1,49 @@
 fileFormatVersion: 2
-guid: 2e77e2b1ce95dfd47993a7f3db8e0dcb
+guid: 7af8468d5d1becd499f21732a2e61401
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1458755994814690254
-    second: status_view
+      213: -6026274716408928695
+    second: Sprite-Enemy-Snowman 1_0
   - first:
-      213: -7741083985349526860
-    second: status_questionmark
+      213: -2888018500126832905
+    second: Sprite-Enemy-Snowman 1_1
   - first:
-      213: 8626645209288400751
-    second: status_exlamationmark
+      213: -5564641598775381382
+    second: Sprite-Enemy-Snowman 1_2
   - first:
-      213: 4137215072174448509
-    second: status_inspect
+      213: -8656663354803326247
+    second: Sprite-Enemy-Snowman 1_3
   - first:
-      213: 4292422063525907133
-    second: status_pick_up
+      213: -8545356488249523142
+    second: Sprite-Enemy-Snowman 1_4
   - first:
-      213: -7781801030861819114
-    second: in_game_status_5
+      213: -4411213780472306652
+    second: Sprite-Enemy-Snowman 1_5
   - first:
-      213: -1520680085464506165
-    second: status_thirst
+      213: -4384276796857550152
+    second: Sprite-Enemy-Snowman 1_6
   - first:
-      213: 7725830274876557313
-    second: status_exhaustion
+      213: 5131413424111593257
+    second: Sprite-Enemy-Snowman 1_7
   - first:
-      213: 7384203550175122711
-    second: status_exhaustion_1
+      213: -3006533052785999666
+    second: Sprite-Enemy-Snowman 1_8
   - first:
-      213: 4498381664617366555
-    second: status_health
+      213: 4648024342725729892
+    second: Sprite-Enemy-Snowman 1_9
   - first:
-      213: 5096497594281181354
-    second: status_hunger
+      213: 585319805017060437
+    second: Sprite-Enemy-Snowman 1_10
   - first:
-      213: 6299907604236971236
-    second: status_use_axe
+      213: -5196104135945021428
+    second: Sprite-Enemy-Snowman 1_11
   - first:
-      213: -3003136042002207211
-    second: status_enter
+      213: 676663026416986189
+    second: Sprite-Enemy-Snowman 1_12
   - first:
-      213: -6091393877383273569
-    second: status_leave
+      213: 615242231891149250
+    second: Sprite-Enemy-Snowman 1_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -88,7 +88,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -157,295 +157,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: status_view
+      name: Sprite-Enemy-Snowman 1_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 636
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23c491bc62571cbe0800000000000000
-      internalID: -1458755994814690254
+      spriteID: 9462781f21f5e5ca0800000000000000
+      internalID: -6026274716408928695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_questionmark
+      name: Sprite-Enemy-Snowman 1_1
       rect:
         serializedVersion: 2
-        x: 652
+        x: 64
         y: 0
-        width: 634
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bab6cc1125229490800000000000000
-      internalID: -7741083985349526860
+      spriteID: 7f60f2bb972bbe7d0800000000000000
+      internalID: -2888018500126832905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_exlamationmark
+      name: Sprite-Enemy-Snowman 1_2
       rect:
         serializedVersion: 2
-        x: 1295
+        x: 128
         y: 0
-        width: 639
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6fd5f6ac1008b770800000000000000
-      internalID: 8626645209288400751
+      spriteID: a72b1aad2fb66c2b0800000000000000
+      internalID: -5564641598775381382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_inspect
+      name: Sprite-Enemy-Snowman 1_3
       rect:
         serializedVersion: 2
-        x: 1943
+        x: 192
         y: 0
-        width: 639
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7f995030375a6930800000000000000
-      internalID: 4137215072174448509
+      spriteID: 9d27ec43b8a5dd780800000000000000
+      internalID: -8656663354803326247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_pick_up
+      name: Sprite-Enemy-Snowman 1_4
       rect:
         serializedVersion: 2
-        x: 2590
+        x: 256
         y: 0
-        width: 635
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbac282ef1fb19b30800000000000000
-      internalID: 4292422063525907133
+      spriteID: a34cec69c8bc86980800000000000000
+      internalID: -8545356488249523142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: in_game_status_5
+      name: Sprite-Enemy-Snowman 1_5
       rect:
         serializedVersion: 2
-        x: 3232
+        x: 320
         y: 0
-        width: 636
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61376b2313d710490800000000000000
-      internalID: -7781801030861819114
+      spriteID: 424e3a2307838c2c0800000000000000
+      internalID: -4411213780472306652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_thirst
+      name: Sprite-Enemy-Snowman 1_6
       rect:
         serializedVersion: 2
-        x: 3875
+        x: 384
         y: 0
-        width: 636
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc0a0e8e48575eae0800000000000000
-      internalID: -1520680085464506165
+      spriteID: 8ba715e6b7be723c0800000000000000
+      internalID: -4384276796857550152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_exhaustion
+      name: Sprite-Enemy-Snowman 1_7
       rect:
         serializedVersion: 2
-        x: 4522
+        x: 448
         y: 0
-        width: 636
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 108c9f8a3b9a73b60800000000000000
-      internalID: 7725830274876557313
+      spriteID: 927a7d36251763740800000000000000
+      internalID: 5131413424111593257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_exhaustion_1
+      name: Sprite-Enemy-Snowman 1_8
       rect:
         serializedVersion: 2
-        x: 5170
+        x: 512
         y: 0
-        width: 636
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 715dd557106f97660800000000000000
-      internalID: 7384203550175122711
+      spriteID: ec048372e16a646d0800000000000000
+      internalID: -3006533052785999666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_health
+      name: Sprite-Enemy-Snowman 1_9
       rect:
         serializedVersion: 2
-        x: 5815
+        x: 576
         y: 0
-        width: 639
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1406af5a467d6e30800000000000000
-      internalID: 4498381664617366555
+      spriteID: 46e198f6389118040800000000000000
+      internalID: 4648024342725729892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_hunger
+      name: Sprite-Enemy-Snowman 1_10
       rect:
         serializedVersion: 2
-        x: 6461
+        x: 640
         y: 0
-        width: 641
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa043c14f856ab640800000000000000
-      internalID: 5096497594281181354
+      spriteID: 554fa02f2497f1800800000000000000
+      internalID: 585319805017060437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_use_axe
+      name: Sprite-Enemy-Snowman 1_11
       rect:
         serializedVersion: 2
-        x: 7108
+        x: 704
         y: 0
-        width: 636
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eca3547694cd6750800000000000000
-      internalID: 6299907604236971236
+      spriteID: c081f0981dab3e7b0800000000000000
+      internalID: -5196104135945021428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_enter
+      name: Sprite-Enemy-Snowman 1_12
       rect:
         serializedVersion: 2
-        x: 7751
+        x: 768
         y: 0
-        width: 636
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51e294c5ea7b256d0800000000000000
-      internalID: -3003136042002207211
+      spriteID: d48a93aff6df36900800000000000000
+      internalID: 676663026416986189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: status_leave
+      name: Sprite-Enemy-Snowman 1_13
       rect:
         serializedVersion: 2
-        x: 8394
+        x: 832
         y: 0
-        width: 636
-        height: 514
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f93a497ca85077ba0800000000000000
-      internalID: -6091393877383273569
+      spriteID: 2c1c0badc87c98800800000000000000
+      internalID: 615242231891149250
       vertices: []
       indices: 
       edges: []
