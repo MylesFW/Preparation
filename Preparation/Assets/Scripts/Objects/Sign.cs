@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Sign : MonoBehaviour
+public class Sign : Interactable
 {
-    public SignalSender context;
     public GameObject dialogBox;
     public Text dialogText;
     public string dialog;
-    public bool playerInRange;
 
     // Start is called before the first frame update
     void Start()
@@ -34,19 +32,9 @@ public class Sign : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.CompareTag("Player") && !other.isTrigger)
-        {
-            context.Raise();
-            Debug.Log("Player in range");
-            playerInRange = true;
-        }
-    }
-
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && !other.isTrigger)
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
             context.Raise();
             Debug.Log("Player out of range");
