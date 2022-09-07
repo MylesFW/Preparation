@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49561f7ee3cd58e4598c2f774b369293, type: 3}
   m_Name: Locker Key
   m_EditorClassIdentifier: 
-  itemSprite: {fileID: 0}
-  itemDescription: 
-  isKey: 0
+  itemSprite: {fileID: 21300000, guid: b60828446a039664a81517315123636c, type: 3}
+  itemDescription: It's a small worn out key. A label reads "supply locker! DO NOT
+    LOSE"
+  isKey: 1
