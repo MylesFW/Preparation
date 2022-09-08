@@ -18,7 +18,6 @@ public class Sign : Interactable
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("in the Sign script");
         if(Input.GetKeyDown(KeyCode.R) && playerInRange) //Input.GetKey => if a key is held Input.GetKeyDown => if a key is pressed
         {
             if(dialogBox.activeInHierarchy)

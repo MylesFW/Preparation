@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Snowman : Enemy
 {
-    private Rigidbody2D myRidgedBody;
+    public Rigidbody2D myRidgedBody;
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
@@ -18,6 +18,7 @@ public class Snowman : Enemy
         myRidgedBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
+        anim.SetBool("wakeUp", true);
     }
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class Snowman : Enemy
         CheckDistance();
     }
 
-    void CheckDistance()
+    public virtual void CheckDistance()
     {
         if(Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius)
         {
@@ -53,7 +54,7 @@ public class Snowman : Enemy
         anim.SetFloat("moveY", setVector.y);
     }
 
-    private void changeAnim(Vector2 direction)
+    public void changeAnim(Vector2 direction)
     {
         if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
