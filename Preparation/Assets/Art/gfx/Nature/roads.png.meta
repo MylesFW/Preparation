@@ -39591,6 +39591,132 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: roads_508
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 601
+        width: 23
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5bd5901aae9ba10800000000000000
+      internalID: 1925828293045368239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_510
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 601
+        width: 24
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525e90af24c1a6810800000000000000
+      internalID: 1759249678429971749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_553
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 601
+        width: 14
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb26ca622425bdf0800000000000000
+      internalID: -165186081090294864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_554
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 569
+        width: 14
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c942b24faa7e633c0800000000000000
+      internalID: -4380058866144303972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_555
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 565
+        width: 21
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4258eba15d5d87df0800000000000000
+      internalID: -182160673655061212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roads_556
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 565
+        width: 21
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b44ed1d81b1aa6c0800000000000000
+      internalID: -4131459914744838986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Locker Key
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 21300000, guid: b60828446a039664a81517315123636c, type: 3}
-  itemDescription: It's a small worn out key. A label reads "supply locker! DO NOT
-    LOSE"
+  itemDescription: It's a small worn out key. . .  Could the door be nearby?
   isKey: 1

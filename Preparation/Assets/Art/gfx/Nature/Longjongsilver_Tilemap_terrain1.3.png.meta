@@ -1,7 +1,157 @@
 fileFormatVersion: 2
 guid: adff0b71bec70834c9f3c87bb1cf7758
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -35759564388914463
+    second: Longjongsilver_Tilemap_terrain1.3_0
+  - first:
+      213: -8283841322580194225
+    second: Longjongsilver_Tilemap_terrain1.3_3
+  - first:
+      213: 3385776552254315152
+    second: Longjongsilver_Tilemap_terrain1.3_4
+  - first:
+      213: -7752396423208345183
+    second: Longjongsilver_Tilemap_terrain1.3_5
+  - first:
+      213: -4398448300088748762
+    second: Longjongsilver_Tilemap_terrain1.3_6
+  - first:
+      213: 8635907219981683634
+    second: Longjongsilver_Tilemap_terrain1.3_7
+  - first:
+      213: -1764047426708339675
+    second: Longjongsilver_Tilemap_terrain1.3_8
+  - first:
+      213: 2813095502124286340
+    second: Longjongsilver_Tilemap_terrain1.3_9
+  - first:
+      213: 532800566283012054
+    second: Longjongsilver_Tilemap_terrain1.3_10
+  - first:
+      213: -8765506423272724821
+    second: Longjongsilver_Tilemap_terrain1.3_11
+  - first:
+      213: -7190142554334756306
+    second: Longjongsilver_Tilemap_terrain1.3_12
+  - first:
+      213: 5258098483128812079
+    second: Longjongsilver_Tilemap_terrain1.3_13
+  - first:
+      213: 4778971213283879930
+    second: Longjongsilver_Tilemap_terrain1.3_14
+  - first:
+      213: 7495906346171869155
+    second: Longjongsilver_Tilemap_terrain1.3_15
+  - first:
+      213: 7487980942415390368
+    second: Longjongsilver_Tilemap_terrain1.3_16
+  - first:
+      213: 2182292784010758777
+    second: Longjongsilver_Tilemap_terrain1.3_17
+  - first:
+      213: 5635216983285464216
+    second: Longjongsilver_Tilemap_terrain1.3_18
+  - first:
+      213: -6762362425125733398
+    second: Longjongsilver_Tilemap_terrain1.3_19
+  - first:
+      213: 3740108381446382554
+    second: Longjongsilver_Tilemap_terrain1.3_21
+  - first:
+      213: -589461539359464378
+    second: Longjongsilver_Tilemap_terrain1.3_22
+  - first:
+      213: -4508218975264826171
+    second: Longjongsilver_Tilemap_terrain1.3_25
+  - first:
+      213: -8536336245192800825
+    second: Longjongsilver_Tilemap_terrain1.3_26
+  - first:
+      213: -2614855229536808178
+    second: Longjongsilver_Tilemap_terrain1.3_28
+  - first:
+      213: 2695904206874768768
+    second: Longjongsilver_Tilemap_terrain1.3_29
+  - first:
+      213: -7401145552312306365
+    second: Longjongsilver_Tilemap_terrain1.3_34
+  - first:
+      213: 4912276870136439575
+    second: Longjongsilver_Tilemap_terrain1.3_35
+  - first:
+      213: -7473402862351006154
+    second: Longjongsilver_Tilemap_terrain1.3_36
+  - first:
+      213: -3166737047037824055
+    second: Longjongsilver_Tilemap_terrain1.3_37
+  - first:
+      213: 528356861858617361
+    second: Longjongsilver_Tilemap_terrain1.3_38
+  - first:
+      213: -8894082377584365988
+    second: Longjongsilver_Tilemap_terrain1.3_39
+  - first:
+      213: -6753778771321924058
+    second: Longjongsilver_Tilemap_terrain1.3_40
+  - first:
+      213: -3147730240878224568
+    second: Longjongsilver_Tilemap_terrain1.3_41
+  - first:
+      213: 934301839643812489
+    second: Longjongsilver_Tilemap_terrain1.3_42
+  - first:
+      213: -5064654095284586462
+    second: Longjongsilver_Tilemap_terrain1.3_43
+  - first:
+      213: -7542651907135061646
+    second: Longjongsilver_Tilemap_terrain1.3_44
+  - first:
+      213: -6591775894494836399
+    second: Longjongsilver_Tilemap_terrain1.3_45
+  - first:
+      213: -5314496462899885035
+    second: Longjongsilver_Tilemap_terrain1.3_46
+  - first:
+      213: 7014592786862544784
+    second: Longjongsilver_Tilemap_terrain1.3_47
+  - first:
+      213: 5130166736740999308
+    second: Longjongsilver_Tilemap_terrain1.3_48
+  - first:
+      213: 4740360285796379540
+    second: Longjongsilver_Tilemap_terrain1.3_49
+  - first:
+      213: -5678639862246984052
+    second: Longjongsilver_Tilemap_terrain1.3_50
+  - first:
+      213: -2919357004357233021
+    second: Longjongsilver_Tilemap_terrain1.3_51
+  - first:
+      213: 8897225739891648296
+    second: Longjongsilver_Tilemap_terrain1.3_52
+  - first:
+      213: 1492804427967545695
+    second: Longjongsilver_Tilemap_terrain1.3_53
+  - first:
+      213: 7005730888297062073
+    second: Longjongsilver_Tilemap_terrain1.3_54
+  - first:
+      213: -1794760484739165136
+    second: Longjongsilver_Tilemap_terrain1.3_55
+  - first:
+      213: 2802791858414981820
+    second: Longjongsilver_Tilemap_terrain1.3_56
+  - first:
+      213: 5477067342610573343
+    second: Longjongsilver_Tilemap_terrain1.3_57
+  - first:
+      213: -4329408184031687287
+    second: Longjongsilver_Tilemap_terrain1.3_58
+  - first:
+      213: -3687188851884518471
+    second: Longjongsilver_Tilemap_terrain1.3_24
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +239,1057 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 485
+        width: 96
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaa64b9dd4f08ff0800000000000000
+      internalID: -35759564388914463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 436
+        width: 45
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cc7efe432e90d80800000000000000
+      internalID: -8283841322580194225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 438
+        width: 53
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a17fde5d1bcfe20800000000000000
+      internalID: 3385776552254315152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 400
+        width: 96
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a168ace684f96490800000000000000
+      internalID: -7752396423208345183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 444
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6251a46339295f2c0800000000000000
+      internalID: -4398448300088748762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_7
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 481
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb4d309cd7e8d770800000000000000
+      internalID: 8635907219981683634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 482
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5248b143638d487e0800000000000000
+      internalID: -1764047426708339675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_9
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 481
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4810e5b647f1a0720800000000000000
+      internalID: 2813095502124286340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 459
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d70d69ca43e46700800000000000000
+      internalID: 532800566283012054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_11
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 472
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6ac64895aaa5680800000000000000
+      internalID: -8765506423272724821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_12
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 466
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22057c117b773c90800000000000000
+      internalID: -7190142554334756306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_13
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 468
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22c9e836b488f840800000000000000
+      internalID: 5258098483128812079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_14
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 447
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb6a979ff0525240800000000000000
+      internalID: 4778971213283879930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7ab295b1fc60860800000000000000
+      internalID: 7495906346171869155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 449
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6609d7ef6aae760800000000000000
+      internalID: 7487980942415390368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 433
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a0cda89bf094e10800000000000000
+      internalID: 2182292784010758777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_18
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 434
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c7af85dff443e40800000000000000
+      internalID: 5635216983285464216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 416
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb7eefe3334722a0800000000000000
+      internalID: -6762362425125733398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_21
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 404
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3a299c1c887e330800000000000000
+      internalID: 3740108381446382554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 388
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64469b16adfc1d7f0800000000000000
+      internalID: -589461539359464378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_25
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 375
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc1aa14ab69f61c0800000000000000
+      internalID: -4508218975264826171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_26
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 355
+        width: 37
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5cdf59967d88980800000000000000
+      internalID: -8536336245192800825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_28
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 352
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03d268d50b26bbd0800000000000000
+      internalID: -2614855229536808178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_29
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 346
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0857047b796c96520800000000000000
+      internalID: 2695904206874768768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_34
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 343
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34576774559d94990800000000000000
+      internalID: -7401145552312306365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_35
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 279
+        width: 42
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713a9da79c9eb2440800000000000000
+      internalID: 4912276870136439575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_36
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 282
+        width: 31
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6364e2641b3294890800000000000000
+      internalID: -7473402862351006154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_37
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 281
+        width: 33
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3bd3e0f6d7d04d0800000000000000
+      internalID: -3166737047037824055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_38
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 304
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11819b934c9155700800000000000000
+      internalID: 528356861858617361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_39
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 309
+        width: 38
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ea501533fd19480800000000000000
+      internalID: -8894082377584365988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_40
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 281
+        width: 29
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62658c39df1c542a0800000000000000
+      internalID: -6753778771321924058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_41
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 281
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bd2b7f5040154d0800000000000000
+      internalID: -3147730240878224568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 129
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982a6f0b29e47fc00800000000000000
+      internalID: 934301839643812489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_43
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228b55c1febb6b9b0800000000000000
+      internalID: -5064654095284586462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_44
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 240
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271caca9d0e135790800000000000000
+      internalID: -7542651907135061646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15907a9afbe4584a0800000000000000
+      internalID: -6591775894494836399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_46
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 160
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c48c8df9d1f36b0800000000000000
+      internalID: -5314496462899885035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_47
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 176
+        width: 208
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09795f889f6d85160800000000000000
+      internalID: 7014592786862544784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_48
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 145
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80e8fd5773023740800000000000000
+      internalID: 5130166736740999308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_49
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 129
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b234e709429c140800000000000000
+      internalID: 4740360285796379540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_50
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 113
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86356bc12b6131b0800000000000000
+      internalID: -5678639862246984052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_51
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 81
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3861dbe954c5c77d0800000000000000
+      internalID: -2919357004357233021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 128
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82724b0cbab497b70800000000000000
+      internalID: 8897225739891648296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_53
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 83
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51c220d7b187b410800000000000000
+      internalID: 1492804427967545695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_54
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 100
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be9decff1b593160800000000000000
+      internalID: 7005730888297062073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_55
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 92
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034d63229dab717e0800000000000000
+      internalID: -1794760484739165136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_56
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 51
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb29e2c685485e620800000000000000
+      internalID: 2802791858414981820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_57
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 68
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f182237bab3720c40800000000000000
+      internalID: 5477067342610573343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_58
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 60
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d4f1fd13adae3c0800000000000000
+      internalID: -4329408184031687287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Longjongsilver_Tilemap_terrain1.3_24
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 355
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b394a7564974dcc0800000000000000
+      internalID: -3687188851884518471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -40,7 +40,7 @@ TextureImporter:
     second: building_exterior_2_585
   - first:
       213: -4257505884035154850
-    second: building_exterior_2_586
+    second: shed
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -12003,7 +12003,7 @@ TextureImporter:
         width: 48
         height: 80
       alignment: 9
-      pivot: {x: 0.5, y: 0.025}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -12431,6 +12431,27 @@ TextureImporter:
       bones: []
       spriteID: 5bfc2864c85e359d0800000000000000
       internalID: -2786631353771044939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shed
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 284
+        width: 48
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cf2f8a4fc4ae4c0800000000000000
+      internalID: -4257505884035154850
       vertices: []
       indices: 
       edges: []

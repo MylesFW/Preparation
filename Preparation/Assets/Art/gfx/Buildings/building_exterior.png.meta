@@ -1295,6 +1295,9 @@ TextureImporter:
   - first:
       213: 8024966373248991249
     second: obj_door_grey
+  - first:
+      213: -4987058389946658101
+    second: building_exterior_218
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -5888,8 +5891,8 @@ TextureImporter:
         y: 240
         width: 84
         height: 120
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5931,7 +5934,7 @@ TextureImporter:
         width: 22
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5952,7 +5955,7 @@ TextureImporter:
         width: 16
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5973,7 +5976,7 @@ TextureImporter:
         width: 16
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5981,6 +5984,27 @@ TextureImporter:
       bones: []
       spriteID: 11006fbf5686e5f60800000000000000
       internalID: 8024966373248991249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_exterior_218
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 272
+        width: 34
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2191121d86acab0800000000000000
+      internalID: -4987058389946658101
       vertices: []
       indices: 
       edges: []
