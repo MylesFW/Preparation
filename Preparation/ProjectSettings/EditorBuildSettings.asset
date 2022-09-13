@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Combat Scenes/Combat.unity
     guid: 4708924fb785ee248a3bd96863b7ecb2
+  - enabled: 1
+    path: Assets/Scenes/Test Scenes/Abandoned_House.unity
+    guid: a07b6ebd3d129a04382da487035b6715
   m_configObjects: {}
