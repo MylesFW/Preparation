@@ -548,7 +548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71128756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5, y: -3, z: 0}
+  m_LocalPosition: {x: 1.5, y: -1.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1021985518}
@@ -885,7 +885,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247006169}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5, y: -3, z: 0}
+  m_LocalPosition: {x: -1.5, y: -1.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1247245193}
@@ -1378,7 +1378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387412554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -3, z: 0}
+  m_LocalPosition: {x: 0.5, y: -1.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1277428208}
@@ -2821,6 +2821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 8
   knockTime: 0.15
+  damage: 0
 --- !u!114 &884568296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2834,10 +2835,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
+  maxHealth: {fileID: 0}
   health: 5
   enemyName: Snowman
   baseAttack: 0
   moveSpeed: 2
+  myRidgedBody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 7
   attackRadius: 1
@@ -4103,7 +4106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4214183735133370565, guid: 616d9633610538e43802348771be859d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -0.81
       objectReference: {fileID: 0}
     - target: {fileID: 4214183735133370565, guid: 616d9633610538e43802348771be859d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4319,7 +4322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403568245}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14, y: 5, z: 37.70343}
+  m_LocalPosition: {x: 14, y: 4.1, z: 37.70343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1654886586}
@@ -12324,7 +12327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3928301797141917847, guid: f647f36844bc49048b18236e452ca7e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.41
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 3928301797141917847, guid: f647f36844bc49048b18236e452ca7e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12787,7 +12790,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055582249}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: 5, z: 37.70343}
+  m_LocalPosition: {x: 6, y: 3.42, z: 37.70343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 387412555}
