@@ -21032,7 +21032,7 @@ PrefabInstance:
       objectReference: {fileID: 4026396878464575604, guid: 27d15b30fcde0c44f95eb3fbb271def2, type: 3}
     - target: {fileID: 7654694024525669066, guid: 616d9633610538e43802348771be859d, type: 3}
       propertyPath: sceneToLoad
-      value: Abandoned_House
+      value: Abandoned_House_R1
       objectReference: {fileID: 0}
     - target: {fileID: 7654694024525669066, guid: 616d9633610538e43802348771be859d, type: 3}
       propertyPath: fadeOutPanel
@@ -21044,7 +21044,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 283e8477e8a8a0f418ff3b40d14f25d0, type: 2}
     - target: {fileID: 7654694024525669066, guid: 616d9633610538e43802348771be859d, type: 3}
       propertyPath: playerPosition.x
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7654694024525669066, guid: 616d9633610538e43802348771be859d, type: 3}
       propertyPath: playerPosition.y
