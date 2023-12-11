@@ -198,6 +198,8 @@ MonoBehaviour:
   enemyName: Snowman
   baseAttack: 0
   moveSpeed: 2
+  deathEffect: {fileID: 1279638626449534741, guid: 8fa740451dec0944cbbf1ea93607c573, type: 3}
+  myRidgedBody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 7
   attackRadius: 1

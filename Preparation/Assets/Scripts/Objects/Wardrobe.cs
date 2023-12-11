@@ -5,18 +5,29 @@ using UnityEngine.UI;
 
 public class Wardrobe : Interactable
 {
+    [Header("Contents")]
     public Item contents;
     public bool isSearched;
+    public BoolValue storedSearched;
+
+    [Header("Signals and Dialog")]
     public Inventory playerInventory;
     public SignalSender raiseItem;
     public GameObject dialogBox;
     public Text dialogText;
+
+    [Header("Search Animation")]
     public Animator anim; 
     // Start is called before the first frame update
 
     void Start()
     {
         anim = GetComponent<Animator>();
+        isSearched = storedSearched.RuntimeValue;
+        if (isSearched)
+        {
+            anim.SetBool("searched", true);
+        }
     }
 
     // Update is called once per frame
@@ -52,6 +63,7 @@ public class Wardrobe : Interactable
         //set wardrobe to Searched
         isSearched = true;
         anim.SetBool("searched", true);
+        storedSearched.RuntimeValue = isSearched;
     }
 
     public void WardrobeSearched()
@@ -60,6 +72,7 @@ public class Wardrobe : Interactable
        dialogBox.SetActive(false);
        //raise the signal to the player to stop animating
        raiseItem.Raise();
+        playerInRange = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
