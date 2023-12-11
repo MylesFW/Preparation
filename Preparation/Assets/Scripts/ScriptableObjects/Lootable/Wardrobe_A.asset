@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb79c9516a88bb418d8c39223ebca48, type: 3}
-  m_Name: PlayerInventory
+  m_Script: {fileID: 11500000, guid: 604c4f56b1ef4b04f88c49bb7e509678, type: 3}
+  m_Name: Wardrobe_A
   m_EditorClassIdentifier: 
-  currentItem: {fileID: 11400000, guid: 6c63cd065554d1148af1f496890b63d9, type: 2}
-  items:
-  - {fileID: 0}
-  numberOfKeys: 0
+  initialValue: 0
+  RuntimeValue: 0

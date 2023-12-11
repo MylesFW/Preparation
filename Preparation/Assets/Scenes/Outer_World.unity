@@ -2835,13 +2835,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
-  maxHealth: {fileID: 0}
+  maxHealth: {fileID: 11400000, guid: c2aeab572cf9d014283124e0efb44d16, type: 2}
   health: 5
   enemyName: Snowman
   baseAttack: 0
   moveSpeed: 2
-  myRidgedBody: {fileID: 0}
-  target: {fileID: 0}
+  myRidgedBody: {fileID: 884568299}
+  target: {fileID: 1206443024}
   chaseRadius: 7
   attackRadius: 1
   homePosition: {fileID: 0}
@@ -2988,7 +2988,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &884568302
 Transform:
   m_ObjectHideFlags: 0
@@ -13055,13 +13055,25 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3473019398609686740, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
+      propertyPath: currentHealth
+      value: 
+      objectReference: {fileID: 11400000, guid: 042fc0275abaccb4cb41201d86d3e894, type: 2}
+    - target: {fileID: 3473019398609686740, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
       propertyPath: movementSpeed
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3473019398609686740, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 11400000, guid: da85961b388c2e641b1002f3fcbf6791, type: 2}
+    - target: {fileID: 3473019398609686740, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
       propertyPath: startingPosition
       value: 
       objectReference: {fileID: 11400000, guid: 283e8477e8a8a0f418ff3b40d14f25d0, type: 2}
+    - target: {fileID: 3473019398609686740, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
+      propertyPath: playerHealthSignal
+      value: 
+      objectReference: {fileID: 11400000, guid: 1184a66c61522834985fac8dd203146a, type: 2}
     - target: {fileID: 3473019398609686741, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -13121,6 +13133,10 @@ PrefabInstance:
     - target: {fileID: 3473019398609686743, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
       propertyPath: m_Offset.y
       value: 0.07257271
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473019398609686743, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3473019398609686743, guid: 5d49ced411ef1ab468d3127a9aad27ef, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y

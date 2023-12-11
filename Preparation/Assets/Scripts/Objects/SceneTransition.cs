@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
 
+    [Header("New Scene Variables")]
     public string sceneToLoad;
     public Vector2 playerPosition;
     public VectorValue playerStorage;
+
+    [Header("Transition Variables")]
     public GameObject fadeInPanel;
     public GameObject fadeOutPanel;
     public float fadeWait;
