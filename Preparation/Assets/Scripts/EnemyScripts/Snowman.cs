@@ -5,10 +5,13 @@ using UnityEngine;
 public class Snowman : Enemy
 {
     public Rigidbody2D myRidgedBody;
+    [Header("Target Variables")]
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
     public Transform homePosition;
+
+    [Header("Animator")]
     public Animator anim;
 
     // Start is called before the first frame update
