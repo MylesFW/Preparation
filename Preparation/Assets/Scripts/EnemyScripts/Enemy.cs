@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
+
+    [Header("Death Effects")]
     public GameObject deathEffect;
 
     private void Awake()
