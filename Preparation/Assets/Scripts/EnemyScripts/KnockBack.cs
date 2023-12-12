@@ -28,7 +28,7 @@ public class KnockBack : MonoBehaviour
 
                 if (other.gameObject.CompareTag("enemy") && other.isTrigger)
                 {
-                   hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
+                    hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
                     other.GetComponent<Enemy>().Knock(hit, knockTime, damage);
                 }
                 if (other.gameObject.CompareTag("Player"))
