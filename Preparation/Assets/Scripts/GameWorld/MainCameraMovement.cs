@@ -5,7 +5,7 @@ using UnityEngine;
 public class MainCameraMovement : MonoBehaviour
     //camera knows what obj it needs to follow, and will move towards object if its not there 
 {
-
+    [Header("Position Variables")]
     public Transform target;
     public float smoothing;
     public Vector2 maxPosition;
@@ -14,7 +14,7 @@ public class MainCameraMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
