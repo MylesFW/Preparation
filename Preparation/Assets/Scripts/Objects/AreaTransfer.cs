@@ -39,7 +39,7 @@ public class AreaTransfer : MonoBehaviour
                 //Area transfer to different sized rooms. Replace previous with this
                     //cam.minPosition += cameraMinChange;
                     //cam.maxPosition += cameraMaxChange;
-            other.transform.position += playerChange;
+            //other.transform.position += playerChange;
             if (needText)
             {
                 StartCoroutine(placeNameCo());

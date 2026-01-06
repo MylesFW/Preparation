@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         currentState = PlayerState.walk;
         animator = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
-        transform.position = startingPosition.initialValue;
+        //transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame
@@ -78,20 +78,7 @@ public class Player : MonoBehaviour
 
     public void RaiseItem()
     {
-        if (playerInventory.currentItem != null)
-        {
-            if (currentState != PlayerState.interact)
-            {
-                animator.SetBool("receive item", true);
-                currentState = PlayerState.interact;
-                receivedItemSprite.sprite = playerInventory.currentItem.itemSprite;
-            } else
-            {
-                animator.SetBool("receive item", false);
-                currentState = PlayerState.idle;
-                receivedItemSprite.sprite = null;
-            }
-        }
+        
     }
 
     void UpdateAnimationAndMove()
@@ -111,8 +98,8 @@ public class Player : MonoBehaviour
 
     void MoveCharacter()
     {
-        change.Normalize();
-        myRigidBody.MovePosition(transform.position + change * movementSpeed * Time.fixedDeltaTime);
+        //change.Normalize();
+        //myRigidBody.MovePosition(transform.position + change * movementSpeed * Time.fixedDeltaTime);
     }
     
     //player knockback will occurr if the player has more than zero health
