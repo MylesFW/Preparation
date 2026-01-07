@@ -5,6 +5,7 @@ using UnityEngine;
 public class Inputs : MonoBehaviour
 {
     // KeyBindings
+    
     public KeyCode leftKey          = KeyCode.A;
     public KeyCode rightKey         = KeyCode.D;
     public KeyCode upKey            = KeyCode.W;
@@ -14,34 +15,25 @@ public class Inputs : MonoBehaviour
     public KeyCode checkInventory   = KeyCode.E;
     public KeyCode quickMenu        = KeyCode.Space;
 
-    public Vector2 mousePos;
+    [HideInInspector] public Vector2 mousePos;
 
     // Input check bools // pressed = once per input until reset.
-    public bool leftPressed; 
-    public bool rightPresseed;
-    public bool upPressed;
-    public bool downPressed;
-    public bool crouchPressed;
-    public bool inventoryPressed;
-    public bool sprintHold;
-    public bool interactDown;
-    public bool interactUp;
-
-    public bool interact;
-    public bool altClick;
-    public bool cycleEquiped;
-
-    public bool showGameControllerInfo;
+    
+    [HideInInspector] public bool leftPressed, rightPresseed, upPressed, downPressed;
+    [HideInInspector] public bool crouchPressed, inventoryPressed, sprintHold, interactDown, interactUp;
+    [HideInInspector] public bool interact, altClick, cycleEquiped, showGameControllerInfo;
 
 
     // Input Axis (Project Settings)
-    public Vector2 inputVector;
+    
+    [HideInInspector] public Vector2 inputVector;
     private float horizontalInput;
     private float verticalInput;
 
     // Input Settings
-    public bool crouchToggle;
-    public bool autoWalk;
+    
+    [HideInInspector] public bool crouchToggle;
+    [HideInInspector] public bool autoWalk;
 
     // Methods
     public void UpdateButtonInputs()
@@ -79,7 +71,18 @@ public class Inputs : MonoBehaviour
 
     private void Awake()
     {
+        /*
+        leftKey = KeyCode.A;
+        rightKey = KeyCode.D;
+        upKey = KeyCode.W;
+        downKey = KeyCode.S;
         crouchKey = KeyCode.C;
+        backKey = KeyCode.Escape;
+        checkInventory = KeyCode.E;
+        quickMenu = KeyCode.Space;
+        crouchKey = KeyCode.C;
+        */
+
         crouchToggle = false;
         autoWalk = false;
     }

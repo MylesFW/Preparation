@@ -5,9 +5,15 @@ using UnityEngine.Playables;
 
 public class Animator2D : MonoBehaviour
 {   
-    public SpriteRenderer spriteRenderer;
+    // Brennan
+    // Custom Animator 2D Component
+    
+    // Declares
+    
+    [HideInInspector] public SpriteRenderer spriteRenderer;
+    [HideInInspector] public Sprite[] currentSheet;
 
-    public Sprite[] currentSheet;
+    // Declare stored sprite sheets (too change!)
 
     public Sprite[] spr_walkDown;
     public Sprite[] spr_walkUp;
@@ -18,15 +24,24 @@ public class Animator2D : MonoBehaviour
     public Sprite[] spr_walkUpLeft;
     public Sprite[] spr_walkUpRight;
 
-    public bool playAnimation;
-    public float frameMultiplier;
-    public int frameIndex;
+    // Hidden Publics
+
+    [HideInInspector] public bool playAnimation;
+    [HideInInspector] public float frameMultiplier;
+    [HideInInspector] public int frameIndex;
     
+    // privs
+
     private float frameSpeed;
     private bool loop;
     
     private void FrameRate()
     {
+        
+        // Checks if the frame timer has reached 0
+        // update animation index if so
+        // if animations have been switched off, do nothing
+
         if (!playAnimation)
         {
             return;
@@ -46,9 +61,12 @@ public class Animator2D : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        
         frameIndex = 0;
+        
         loop = true;
         playAnimation = false;
+        
         currentSheet = spr_walkDown;
         spriteRenderer.sprite = currentSheet[frameIndex];
     }

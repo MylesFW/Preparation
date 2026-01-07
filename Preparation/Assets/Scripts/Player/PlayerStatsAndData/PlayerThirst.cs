@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class PlayerThirst : MonoBehaviour
 {
+    public SimTime simTime;
     public Action isThirsty;
     public Action isDehydrated;
 
-    public float thirst;
-    public float maxThirst;
-    public float dehydrateRate;
+    [HideInInspector] public float thirst;
+    [HideInInspector] public float maxThirst;
+    [HideInInspector] public float dehydrateRate;
+    
     public float maxDehydrateRate;
 
-    public int thirstLevel;
-
-    public SimTime simTime;
+    [HideInInspector] public int thirstLevel;
     
     private void HandleThirstDrain()
     {

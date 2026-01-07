@@ -5,23 +5,43 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public ObjectContext playerContext;
-    public SimTime simTime;
-    public BuffManager buffManager;
-    [HideInInspector] public Action OnInteractComplete;
+    // Brennan
+    // 1/5/26
+    
+    // DayNightCycle Simulation script reference
+    // used in performing logic "On GameTick"
 
-    public int currentEquiped;
-    public bool onInteractCompleteFlag;
-    public NewItem[] equiped;
+    public SimTime simTime;
+    
+    // PCHandles the creation of the playerobject context
+    // PC handles a few buff creation/deletion actions
+    // Action for completing a interact (Longdark loading circle thing)
+
+    [HideInInspector] public ObjectContext playerContext;
+    [HideInInspector] public BuffManager buffManager;
+    [HideInInspector] public Action OnInteractComplete;
+    [HideInInspector] public bool onInteractCompleteFlag;
+    
+    // Equiped Items, index and array
+
+    [HideInInspector] public int currentEquiped;
+    [HideInInspector] public NewItem[] equiped;
+
+    // PC handles a few important state requesting tasks related to player input
+    // The inputs script does'nt have any logic really, it justs relays and is processed here
+    // Animator 2d helps with "Posture" changes for the FSM's "Motor" changes. Otherwise states handle anims
 
     private FiniteStateMachine fsm;
     private Inputs playerInput;
     private Animator2D animator;  
 
+    // More bools
+
     private bool crouchToggle;
     private bool inventoryToggle;
 
-    // Methods
+    // Methods ============================================
+    
     private void IdleCrouchWalk()
     {
         // Decides if the crouched/uncrouched version of idle and walk should be used    
@@ -121,7 +141,7 @@ public class PlayerController : MonoBehaviour
             buffManager.SetBuffIndefinite(_name, true);
         }
     }
-    private void OnNeedFulfilled(string _name)
+    private void NeedFulfilled(string _name)
     {
         if (buffManager.BuffExistsByName(_name) == false)
         {
@@ -133,43 +153,47 @@ public class PlayerController : MonoBehaviour
         }
     }
     
+    // Listener Behaviours ================================
+    
     #region Event methods (Listeners)
-    private void RespondToFreezing()
+    private void OnFreezing()
     {
         UnfulfilledNeed("Hypothermia", new HypothermiaBuff(simTime, playerContext));
     }
-    private void RespondToCold()
+    private void OnCold()
     {
-        OnNeedFulfilled("Hypothermia");
+        NeedFulfilled("Hypothermia");
     }
-    private void RespondToStarving()
+    private void OnStarving()
     {
         UnfulfilledNeed("Starvation", new StarvationBuff(simTime, playerContext));
     }
-    private void RespondToHungry()
+    private void OnHungry()
     {
-        OnNeedFulfilled("Starvation");
+        NeedFulfilled("Starvation");
     }
-    private void RespondToDehydrated()
+    private void OnDehydrated()
     {
         UnfulfilledNeed("Dehydration", new DehydrationBuff(simTime, playerContext));
     }
-    private void RespondToThirsty()
+    private void OnThirsty()
     {
-        OnNeedFulfilled("Dehydration");
+        NeedFulfilled("Dehydration");
     }
-    private void RespondToExhausted()
+    private void OnExhausted()
     {
         UnfulfilledNeed("Exhausted", new ExhaustedBuff(simTime, playerContext));
     }
-    private void RespondToTired()
+    private void OnTired()
     {
-        OnNeedFulfilled("Exhausted");
+        NeedFulfilled("Exhausted");
     }
     #endregion
 
     private void Awake()
     {
+        // Build player context (Important)
+        
         playerContext = new ObjectContext
         {
             transform = transform,
@@ -207,17 +231,17 @@ public class PlayerController : MonoBehaviour
         currentEquiped = 0;
 
         // Subscribe Buff events
-        playerContext.playerTemp.isFreezing += RespondToFreezing;
-        playerContext.playerTemp.isCold += RespondToCold;
+        playerContext.playerTemp.isFreezing += OnFreezing;
+        playerContext.playerTemp.isCold += OnCold;
 
-        playerContext.playerCalories.isStarving += RespondToStarving;
-        playerContext.playerCalories.isHungry += RespondToHungry;
+        playerContext.playerCalories.isStarving += OnStarving;
+        playerContext.playerCalories.isHungry += OnHungry;
 
-        playerContext.playerFatigue.isTired += RespondToTired;
-        playerContext.playerFatigue.isSleepDeprived += RespondToExhausted;
+        playerContext.playerFatigue.isTired += OnTired;
+        playerContext.playerFatigue.isSleepDeprived += OnExhausted;
 
-        playerContext.playerThirst.isThirsty += RespondToThirsty;
-        playerContext.playerThirst.isDehydrated += RespondToDehydrated;
+        playerContext.playerThirst.isThirsty += OnThirsty;
+        playerContext.playerThirst.isDehydrated += OnDehydrated;
     }
 
     private void Update()

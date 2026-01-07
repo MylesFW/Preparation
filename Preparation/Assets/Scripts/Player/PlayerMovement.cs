@@ -4,8 +4,8 @@ using UnityEngine;
  
 public class PlayerMovement : MonoBehaviour
 {
-    public Vector2 position;
-    public Vector2 velocity;
+    [HideInInspector] public Vector2 position;
+    [HideInInspector] public Vector2 velocity;
 
     private Rigidbody2D Rigidbody2D;
 

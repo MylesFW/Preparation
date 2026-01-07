@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 7515526577556364574}
   - component: {fileID: 613040211069709020}
   - component: {fileID: 1227662737}
+  - component: {fileID: 6947181037709142791}
   m_Layer: 0
   m_Name: Player_Brennan
   m_TagString: Player
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 4344223636285522680, guid: 599126f1ff528584ea6e77a2e7a8753e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -257,8 +258,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   simTime: {fileID: 0}
   buffManager: {fileID: 7515526577556364574}
-  currentEquiped: 0
   onInteractCompleteFlag: 0
+  currentEquiped: 0
 --- !u!114 &7515526577556364782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,8 +278,8 @@ MonoBehaviour:
   downKey: 115
   crouchKey: 99
   backKey: 27
-  checkInventory: 0
-  quickMenu: 0
+  checkInventory: 101
+  quickMenu: 32
   mousePos: {x: 0, y: 0}
   leftPressed: 0
   rightPresseed: 0
@@ -582,3 +583,15 @@ MonoBehaviour:
   playAnimation: 0
   frameMultiplier: 0
   frameIndex: 0
+--- !u!114 &6947181037709142791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7515526577556364781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec99f20431f74c049bc9cbf203e8ac11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
