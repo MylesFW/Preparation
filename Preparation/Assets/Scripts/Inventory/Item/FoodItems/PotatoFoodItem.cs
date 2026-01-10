@@ -26,7 +26,7 @@ public class PotatoFoodItem : FoodItem
         }
     }
 
-    public PotatoFoodItem(ObjectContext _context, float _weight = -1f, float _stack = 1f)
+    public PotatoFoodItem(ObjectContext _context = playerContext, float _weight = -1f, float _stack = 1f)
     {        
         this.name = "Potato";
         this.description = "A hardy root vegetable";

@@ -12,7 +12,7 @@ public class ObjectContext
     public AudioListener audioListener;
     public AudioSource audioSource;
 
-    // Player Scripts
+    // Player Components
     public Inputs playerInput;      
     public PlayerMovement playerMovement;
     public PlayerCalories playerCalories;
@@ -23,6 +23,10 @@ public class ObjectContext
     public PlayerStamina playerStamina;
     public BuffManager playerBuffManager;
     public PlayerController playerController;
+    public InteractManager interactManager;
+
+    // General Object Components
+    public Inventory inventory;
 
     // Weather Machine
     public WeatherController weatherController;

@@ -5,42 +5,34 @@ using UnityEngine;
 public class InteractState : State
 {
     private float interactTimer;
-    private void RaiseInteractCompleted()
-    {
-      
-    }
-
+    private BaseInteractable interactable;
     // Called once on State enter
     public override void Enter()
     {
-            
+             
     }
     // Called once per frame until the State is switched
     public override void Run()
     {
-        if (self.playerInput.interact == true)
+        interactTimer -= 0.2f * Time.deltaTime;
+        //Debug.Log(interactTimer.ToString());
+
+        if (interactTimer <= 0f)
         {
-            interactTimer -= Time.deltaTime;
-            if (interactTimer <= 0)
-            {
-                fsm.EnqueueState(new IdleState(fsm, self, "IdleState", 5, false, true));
-                self.playerController.onInteractCompleteFlag = true;
-            }
-        } 
-        else if (self.playerInput.interactUp == true)
-        { 
-            fsm.EnqueueState(new IdleState(fsm, self, "IdleState", 5, false, true)); 
-        }
+            interactable.ExecuteInteraction(self);
+            self.interactManager.FinishedInteract();    
+        }        
     }  
     // Called once on State switch
     public override void Exit()
     {
-
+       
     }
 
     //Constructor
-    public InteractState(FiniteStateMachine _fsm, ObjectContext _context, float _timer, string _name = "InteractState", int _priority = 4, bool _locked = true, bool _forceOverride = false)
+    public InteractState(FiniteStateMachine _fsm, ObjectContext _context, float _timer,BaseInteractable interactablecompenent, string _name = "InteractState", int _priority = 4, bool _locked = false, bool _forceOverride = false)
     {
+        interactable = interactablecompenent;
         interactTimer = _timer;
         fsm = _fsm;
         name = _name;

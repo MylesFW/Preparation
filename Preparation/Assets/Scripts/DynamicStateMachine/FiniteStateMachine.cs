@@ -49,7 +49,7 @@ public class FiniteStateMachine : MonoBehaviour
         SwitchState(_state);
         OnStateSwitch?.Invoke(currentState);
     }
-
+        
     private void Start()
     {
         currentState = new NullIdle(this, context);

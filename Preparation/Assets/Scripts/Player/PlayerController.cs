@@ -19,9 +19,7 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector] public ObjectContext playerContext;
     [HideInInspector] public BuffManager buffManager;
-    [HideInInspector] public Action OnInteractComplete;
-    [HideInInspector] public bool onInteractCompleteFlag;
-    
+   
     // Equiped Items, index and array
 
     [HideInInspector] public int currentEquiped;
@@ -33,15 +31,14 @@ public class PlayerController : MonoBehaviour
 
     private FiniteStateMachine fsm;
     private Inputs playerInput;
-    private Animator2D animator;  
+    private Animator2D animator;
 
     // More bools
-
-    private bool crouchToggle;
     private bool inventoryToggle;
+    private bool crouchToggle;
 
     // Methods ============================================
-    
+
     private void IdleCrouchWalk()
     {
         // Decides if the crouched/uncrouched version of idle and walk should be used    
@@ -88,15 +85,6 @@ public class PlayerController : MonoBehaviour
         {
             fsm.EnqueueState(new SprintState(fsm, playerContext));
             crouchToggle = false;
-        }
-    }
-    private void HandleInteract(float _timer)
-    {
-        if (playerInput.interactDown == true)
-        {
-            fsm.EnqueueState(new InteractState(fsm, playerContext, _timer));
-           
-            Debug.Log("interact queued");
         }
     }
     private void HandCheckBackpack()
@@ -213,6 +201,9 @@ public class PlayerController : MonoBehaviour
             playerThirst = GetComponent<PlayerThirst>(),
             playerBuffManager = GetComponent<BuffManager>(),
             playerController = this,
+            interactManager = GetComponent<InteractManager>(),
+
+            inventory = GetComponent<Inventory>(),
         };
 
         fsm = GetComponent<FiniteStateMachine>();
@@ -246,19 +237,9 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-
         IdleCrouchWalk();
         HandCheckBackpack();
         HandleSprint();
         CycleEquiped();
-        HandleInteract(0.001f);
-
-        if (onInteractCompleteFlag == true) 
-        {
-            OnInteractComplete?.Invoke();
-            onInteractCompleteFlag = false;
-            
-        }
-    
     }
 }

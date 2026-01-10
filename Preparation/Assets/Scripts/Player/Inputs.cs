@@ -12,8 +12,9 @@ public class Inputs : MonoBehaviour
     public KeyCode downKey          = KeyCode.S;
     public KeyCode crouchKey        = KeyCode.C;
     public KeyCode backKey          = KeyCode.Escape;
-    public KeyCode checkInventory   = KeyCode.E;
+    public KeyCode checkInventoryKey = KeyCode.Tab;
     public KeyCode quickMenu        = KeyCode.Space;
+    public KeyCode interactKey      = KeyCode.E;
 
     [HideInInspector] public Vector2 mousePos;
 
@@ -22,7 +23,6 @@ public class Inputs : MonoBehaviour
     [HideInInspector] public bool leftPressed, rightPresseed, upPressed, downPressed;
     [HideInInspector] public bool crouchPressed, inventoryPressed, sprintHold, interactDown, interactUp;
     [HideInInspector] public bool interact, altClick, cycleEquiped, showGameControllerInfo;
-
 
     // Input Axis (Project Settings)
     
@@ -46,14 +46,14 @@ public class Inputs : MonoBehaviour
 
         // Keyboard pressed
         crouchPressed = Input.GetKeyDown(KeyCode.LeftControl);
-        inventoryPressed = Input.GetKeyDown(KeyCode.Tab);
+        inventoryPressed = Input.GetKeyDown(checkInventoryKey);
         sprintHold = Input.GetKey(KeyCode.LeftShift);
         cycleEquiped = Input.GetKeyDown(KeyCode.Q);
         showGameControllerInfo = Input.GetKey(KeyCode.X);
         
-        interact = Input.GetKey(KeyCode.E);
-        interactDown = Input.GetKeyDown(KeyCode.E);
-        interactUp = Input.GetKeyUp(KeyCode.E);
+        interact = Input.GetKey(interactKey);
+        interactDown = Input.GetKeyDown(interactKey);
+        interactUp = Input.GetKeyUp(interactKey);
 
         // Mouse clicks 
         altClick = Input.GetMouseButton(1);
@@ -71,18 +71,6 @@ public class Inputs : MonoBehaviour
 
     private void Awake()
     {
-        /*
-        leftKey = KeyCode.A;
-        rightKey = KeyCode.D;
-        upKey = KeyCode.W;
-        downKey = KeyCode.S;
-        crouchKey = KeyCode.C;
-        backKey = KeyCode.Escape;
-        checkInventory = KeyCode.E;
-        quickMenu = KeyCode.Space;
-        crouchKey = KeyCode.C;
-        */
-
         crouchToggle = false;
         autoWalk = false;
     }
