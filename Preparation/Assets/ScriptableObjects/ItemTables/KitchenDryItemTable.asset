@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45251251a2cee284c925d144287d96b3, type: 3}
+  m_Name: KitchenDryItemTable
+  m_EditorClassIdentifier: 
+  tableName: KitchenDryStorage
+  foodItems:
+  - {fileID: 11400000, guid: 765f5a95d0b4d3e4cb58e736debef065, type: 2}
+  - {fileID: 11400000, guid: 246e0dc56df594e4380ca02722eb639e, type: 2}
+  - {fileID: 11400000, guid: fb4d9dc7eb745cf40b6408e100262ef7, type: 2}
+  toolItems: []
+  clothesItems: []
+  firstAidItems: []
+  materialItems: []

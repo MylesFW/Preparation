@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 6bc4a8d385c9b8c4d80c7435d72553f0
+guid: 45251251a2cee284c925d144287d96b3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - potatoTemplate: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

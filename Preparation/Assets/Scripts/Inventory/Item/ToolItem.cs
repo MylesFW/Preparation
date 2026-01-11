@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToolItem : NewItem
+public class ToolItem : Item
 {
     public bool equipable;
     

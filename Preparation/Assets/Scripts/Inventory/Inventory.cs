@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    List<NewItem> inventoryList = new List<NewItem>();
+    public List<Item> inventoryList = new List<Item>();
     private PlayerController playerController;
     private ObjectContext ItemContext;
-    private NewItem guiItemIndex;
+    private Item guiItemIndex;
     private int listIndex;
 
     public int GetItemIndexByName(string item_name)
@@ -30,7 +30,7 @@ public class Inventory : MonoBehaviour
         return -1;
     }
 
-    public void AddItem(NewItem item)
+    public void AddItem(Item item)
     {
         // Not Stackable, no stack logic needed. Add to inventory
         // If stackable, but no items stored to stack to, add to inventory
@@ -64,7 +64,7 @@ public class Inventory : MonoBehaviour
     {
         if (listIndex <= inventoryList.Count - 1 && listIndex >= 0)
         {
-            NewItem _item = inventoryList[_index];
+            Item _item = inventoryList[_index];
             _item.OnConsume();
             if (_item is FoodItem)
             {
@@ -84,10 +84,6 @@ public class Inventory : MonoBehaviour
         playerController = GetComponent<PlayerController>();
         ItemContext = playerController.playerContext;
         listIndex = 0;
-
-        AddItem(new PotatoFoodItem(ItemContext, 0.1f));
-        AddItem(new PotatoFoodItem(ItemContext));
-        AddItem(new FlashLigthtToolItem(ItemContext));
     }
 
     // Update is called once per frame

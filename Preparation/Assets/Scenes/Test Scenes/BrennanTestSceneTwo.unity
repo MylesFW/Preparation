@@ -704,6 +704,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 613040211069709020, guid: a024da884aac3794ea0fabe597f2e96d, type: 3}
+      propertyPath: potatoTemplate
+      value: 
+      objectReference: {fileID: 11400000, guid: 246e0dc56df594e4380ca02722eb639e, type: 2}
     - target: {fileID: 7515526577556364565, guid: a024da884aac3794ea0fabe597f2e96d, type: 3}
       propertyPath: simTime
       value: 
@@ -2880,6 +2884,28 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1440377514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 613040211069709020, guid: a024da884aac3794ea0fabe597f2e96d, type: 3}
+  m_PrefabInstance: {fileID: 310480818}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bc4a8d385c9b8c4d80c7435d72553f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1440377526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7515526577556364565, guid: a024da884aac3794ea0fabe597f2e96d, type: 3}
+  m_PrefabInstance: {fileID: 310480818}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce5a611c74b7a34ab81dc4922219c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1530402318
 GameObject:
   m_ObjectHideFlags: 0
@@ -10084,6 +10110,7 @@ GameObject:
   - component: {fileID: 1604259477}
   - component: {fileID: 1604259476}
   - component: {fileID: 1604259474}
+  - component: {fileID: 1604259475}
   m_Layer: 0
   m_Name: LootableObject
   m_TagString: Untagged
@@ -10104,6 +10131,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactTimer: 0.25
+  playerController: {fileID: 1440377526}
+  inventory: {fileID: 1440377514}
+--- !u!114 &1604259475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604259473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 465b22bd5bddd7947ad1edbdd50bb2cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setLootAmount: 0
+  amountRange: 0
+  setPoint: 0
+  valueRange: 0
+  itemTable: {fileID: 11400000, guid: 2d7c0c7833df92b41a94e499186fa962, type: 2}
+  foodTemplates: []
+  toolTemplates: []
+  firstAidTemplates: []
+  ClothesTemplates: []
+  materialTemplates: []
 --- !u!61 &1604259476
 BoxCollider2D:
   m_ObjectHideFlags: 0

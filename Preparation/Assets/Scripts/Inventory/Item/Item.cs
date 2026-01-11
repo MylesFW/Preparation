@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class NewItem
+public abstract class Item
 {
     // Item Strings
     

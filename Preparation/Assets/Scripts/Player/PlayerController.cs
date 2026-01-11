@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-{
+{   
     // Brennan
     // 1/5/26
     
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     // Equiped Items, index and array
 
     [HideInInspector] public int currentEquiped;
-    [HideInInspector] public NewItem[] equiped;
+    [HideInInspector] public Item[] equiped;
 
     // PC handles a few important state requesting tasks related to player input
     // The inputs script does'nt have any logic really, it justs relays and is processed here
@@ -218,7 +218,7 @@ public class PlayerController : MonoBehaviour
         crouchToggle = false;
         inventoryToggle = false;
 
-        equiped = new NewItem[] { new NullItem(), new NullItem(), new NullItem(), new NullItem() };
+        equiped = new Item[] { new NullItem(), new NullItem(), new NullItem(), new NullItem() };
         currentEquiped = 0;
 
         // Subscribe Buff events

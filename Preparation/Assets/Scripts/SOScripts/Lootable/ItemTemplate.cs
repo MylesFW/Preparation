@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NullItem : Item
+public class ItemTemplate : ScriptableObject
 {
-    new string name = "Null Item";
+
 }
