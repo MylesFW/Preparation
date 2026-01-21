@@ -87,4 +87,8 @@ public class InteractManager : MonoBehaviour
             nearInteractable = false;
         }
     }
+    private void OnTriggerExit2D(Collider2D collider)
+    {
+        nearInteractable = false;
+    }
 }
