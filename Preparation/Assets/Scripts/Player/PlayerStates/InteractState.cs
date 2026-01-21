@@ -12,17 +12,20 @@ public class InteractState : State
     public override void Enter()
     {
         interactable.isInteracting = true;
+        self.animator2D.playAnimation = false;
+        self.animator2D.frameIndex = 0;
     }
     // Called once per frame until the State is switched
     public override void Run()
     {
         interactTimer -= 0.2f * Time.deltaTime;
         //Debug.Log(interactTimer.ToString());
+        self.animator2D.playAnimation = false;
 
         if (interactTimer <= 0f)
         {
             interactable.ExecuteInteraction(self);
-            self.interactManager.FinishInteract();    
+            self.interactManager.FinishInteract();
         }        
     }  
     // Called once on State switch

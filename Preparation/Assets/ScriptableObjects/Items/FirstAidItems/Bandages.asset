@@ -16,8 +16,8 @@ MonoBehaviour:
   worldSprite: {fileID: 0}
   itemName: Bandages
   description: cures bleeding
-  dropRate: 88
+  dropRate: 64
   decayRate: 0
-  stackWeight: 0
-  stackable: 0
+  stackWeight: 0.05
+  stackable: 1
   indefiniteShelfLife: 0
