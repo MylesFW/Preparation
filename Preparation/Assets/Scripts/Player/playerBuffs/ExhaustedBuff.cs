@@ -22,7 +22,7 @@ public class ExhaustedBuff : AfflictionBuff
     public ExhaustedBuff
         (
         SimTime _simTime,
-        ObjectContext _context,
+        PlayerContext _context,
         string _name = "Exhausted",
         string _description = "You will collapse soon if you don't get some sleep",
         string _cause = "Caused by lack of sleep",

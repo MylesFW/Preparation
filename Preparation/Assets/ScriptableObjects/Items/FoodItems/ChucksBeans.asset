@@ -16,7 +16,7 @@ MonoBehaviour:
   worldSprite: {fileID: 0}
   itemName: Chuck Beans
   description: Now with 23% more Bean!
-  probability: 0
+  dropRate: 148
   decayRate: 0.01
   stackWeight: 0.5
   stackable: 0

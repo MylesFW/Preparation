@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SprintState : State
 {
-
+    public PlayerContext self;
     private Vector2 velocity;
     private Vector2 position;
     private float sprintSpeed;
@@ -27,40 +27,7 @@ public class SprintState : State
     }
     private void WalkAnimation()
     {
-
-        if (self.playerInput.inputVector.Equals(Vector2.left))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkLeft;
-        }
-        if (self.playerInput.inputVector.Equals(Vector2.up))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkUp;
-        }
-        if (self.playerInput.inputVector.Equals(Vector2.down))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkDown;
-        }
-        if (self.playerInput.inputVector.Equals(Vector2.right))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkRight;
-        }
-        if (self.playerInput.inputVector.Equals(new Vector2(-1, 1)))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkUpLeft;
-        }
-        if (self.playerInput.inputVector.Equals(new Vector2(1, 1)))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkUpRight;
-        }
-        if (self.playerInput.inputVector.Equals(new Vector2(-1, -1)))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkDownLeft;
-        }
-        if (self.playerInput.inputVector.Equals(new Vector2(1, -1)))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkDownRight;
-        }
-        
+     
     }
     // Called once on State enter
     public override void Enter()
@@ -83,7 +50,7 @@ public class SprintState : State
     }
 
     //Constructor
-    public SprintState(FiniteStateMachine _fsm, ObjectContext _context, string _name = "SprintState", int _priority = 3, bool _locked = false, bool _forceOverride = false)
+    public SprintState(FiniteStateMachine _fsm, PlayerContext _context, string _name = "SprintState", int _priority = 3, bool _locked = false, bool _forceOverride = false)
     {
         fsm = _fsm;
         name = _name;

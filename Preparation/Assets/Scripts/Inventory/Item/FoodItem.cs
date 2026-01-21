@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class FoodItem : Item
 {
-    FoodItemTemplate template;
-    ObjectContext playerContext;
+    public FoodItemTemplate template;
+    public PlayerContext playerContext;
 
     public bool isBeverage;
     
@@ -33,7 +33,7 @@ public class FoodItem : Item
             currentWeight = currentStackAmount;
         }
     }
-    public FoodItem(FoodItemTemplate _template, ObjectContext _context, float _weight, float _condition, int _currentStackAmount = 1)
+    public FoodItem(FoodItemTemplate _template, PlayerContext _context, float _weight, float _condition, int _currentStackAmount = 1)
     {
         // pass vars
         template = _template;

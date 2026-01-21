@@ -17,7 +17,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 765f5a95d0b4d3e4cb58e736debef065, type: 2}
   - {fileID: 11400000, guid: 246e0dc56df594e4380ca02722eb639e, type: 2}
   - {fileID: 11400000, guid: fb4d9dc7eb745cf40b6408e100262ef7, type: 2}
-  toolItems: []
-  clothesItems: []
-  firstAidItems: []
-  materialItems: []
+  toolItems:
+  - {fileID: 11400000, guid: 02a7cf7649d165b4490152d90f078298, type: 2}
+  clothesItems:
+  - {fileID: 11400000, guid: 29500eb23779fcb4690dad85fec93236, type: 2}
+  - {fileID: 11400000, guid: 68d0c9dc0eeef1b439da45ceab01dfe5, type: 2}
+  firstAidItems:
+  - {fileID: 11400000, guid: 5e7bd591772c04e469b621806675d1be, type: 2}
+  materialItems:
+  - {fileID: 11400000, guid: b3593868fe38a544581366a4714a4ac9, type: 2}

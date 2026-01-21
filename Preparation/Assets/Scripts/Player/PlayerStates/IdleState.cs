@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class IdleState : State
 {
+    public ObjectContext self;
     // Called once on State enter
     public override void Enter()
     {

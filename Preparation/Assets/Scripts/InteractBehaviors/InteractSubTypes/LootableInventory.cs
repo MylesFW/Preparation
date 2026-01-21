@@ -5,72 +5,68 @@ using UnityEngine;
 
 public class LootableInventory : BaseInteractable
 {
-
-    public ObjectContext playerContext;
+    // Brennan 1/17/26
+    // Handles the final accessable loot Data available to the player on loot interaction
+    // Kiki says meow i miss you !!!
+    
+    // Declare pieces needed to generate items for player
+    public PlayerContext playerContext;
     public PlayerController playerController;
     public Inventory inventory;
 
-    private List<FoodItemTemplate> foodItems = new List<FoodItemTemplate>();
-    private List<ToolItemTemplate> toolItems = new List<ToolItemTemplate>();
-    private List<ClothesItemTemplate> clothesItems = new List<ClothesItemTemplate>();
-    private List<FirstAidItemTemplate> firstAidItems = new List<FirstAidItemTemplate>();
-    private List<MaterialItemTemplate> materialItems = new List<MaterialItemTemplate>();
+    [HideInInspector] public bool wasLooted;
+    [HideInInspector] public bool isInteracting;
+    [HideInInspector] public bool interactionComplete;
 
-    private List<Item> lootableItems = new List<Item>();
+    // Final lists of lootable templates to generate
+    public List<FoodItemTemplate> foodItems = new List<FoodItemTemplate>();
+    public List<ToolItemTemplate> toolItems = new List<ToolItemTemplate>();
+    public List<FirstAidItemTemplate> firstAidItems = new List<FirstAidItemTemplate>();
+    public List<ClothesItemTemplate> clothesItems = new List<ClothesItemTemplate>();
+    public List<MaterialItemTemplate> materialItems = new List<MaterialItemTemplate>();
 
-    private bool wasLooted;
+    // Privs
+    private ItemUtils itemUtils;
+
+    private void Awake()
+    {
+        itemUtils = GetComponent<ItemUtils>();
+    }
+    
+    private void Start()
+    {
+        wasLooted = false;
+        isInteracting = false;
+        playerContext = playerController.playerContext;
+    }
 
     public void GenerateItemsFromTable()
     {
-        playerContext = playerController.playerContext;
-
-        for (int i = 0; i < foodItems.Count; i++) 
-        {            
-           lootableItems.Add(new FoodItem(foodItems[i], playerController.playerContext, foodItems[i].stackWeight, 100f));
-        }
-    }
-    
-    public void TransferInvetory()
-    {
-        for (int i = 0; i < lootableItems.Count; i++)
-        {
-            inventory.AddItem(lootableItems[i]);
-            if (i == lootableItems.Count - 1)
-            {
-                Destroy(this);
-            }
-        }
+        // Mass produce Items from templates and context
+        itemUtils.ManufactureFoodItemInstances(foodItems, inventory, playerContext);
+        itemUtils.ManufactureToolItemInstances(toolItems, inventory, playerContext);
+        itemUtils.ManufactureFirstAidItemInstances(firstAidItems, inventory, playerContext);
+        itemUtils.ManufactureClothesItemInstances(clothesItems, inventory, playerContext);
+        itemUtils.ManufactureMaterialItemInstances(materialItems, inventory, playerContext);
     }
 
     public override void ExecuteInteraction(ObjectContext _self)
     {
+        
+        // Perform Interaction     
         if (wasLooted == true)
         {
             return;
         }
-        GenerateItemsFromTable();
-        TransferInvetory();
-
-        foodItems.Clear();
-        toolItems.Clear();
-        clothesItems.Clear();
-        firstAidItems.Clear();
-        materialItems.Clear();
-
-        wasLooted = true;
-    }   
-
-    private void Awake()
-    {
-        wasLooted = false;
-    }
-    private void Start()
-    {
-
-        //foodItems = new List<FoodItemTemplate>(lootTable.foodItems);
-        //toolItems = new List<ToolItemTemplate>(lootTable.toolItems);
-        //clothesItems = new List<ClothesItemTemplate>(lootTable.clothesItems);
-        //firstAidItems = new List<FirstAidItemTemplate>(lootTable.firstAidItems);
-        //materialItems = new List<MaterialItemTemplate>(lootTable.materialItems);
+        else if (wasLooted == false)
+        {
+            GenerateItemsFromTable();
+            foodItems.Clear();
+            toolItems.Clear();
+            clothesItems.Clear();
+            firstAidItems.Clear();
+            materialItems.Clear();
+        }
+        interactionComplete = true;
     }
 }

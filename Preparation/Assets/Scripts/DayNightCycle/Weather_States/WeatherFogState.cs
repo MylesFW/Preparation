@@ -4,6 +4,8 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 public class WeatherFogState : State
 {
+    public ObjectContext self;
+
     // Called once on State enter
     public override void Enter()
     {

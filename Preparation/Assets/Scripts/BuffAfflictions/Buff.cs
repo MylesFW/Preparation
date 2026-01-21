@@ -17,7 +17,7 @@ public abstract class Buff
     public bool stackable;
 
     public SimTime simTime;
-    public ObjectContext context;
+    public PlayerContext context;
    
     public virtual void Enter() { }
     public virtual void Run() { }

@@ -10,7 +10,7 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerContext = new ObjectContext
+        playerContext = new PlayerContext
         {
             transform = transform,
             rigidbody = GetComponent<Rigidbody2D>(),

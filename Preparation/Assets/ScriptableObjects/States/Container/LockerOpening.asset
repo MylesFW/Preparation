@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09aa2f3c8959314da93179cb221a33b, type: 3}
+  m_Name: LockerOpening
+  m_EditorClassIdentifier: 
+  priority: 4
+  locked: 0
+  forceOverride: 0
+  spriteSheet: {fileID: 11400000, guid: dc53798133241b84887d574902bb34a5, type: 2}
+  animationSpeed: 0.1
+  playAnimation: 1
+  loopAnim: 0
+  reverseAnim: 0
+  openingSound: {fileID: 8300000, guid: df508712c11e3894cafc8bdd3cef3533, type: 3}
+  closedSound: {fileID: 8300000, guid: 88d7863d7713b6f4c8ca35ee7d72d92f, type: 3}

@@ -43,8 +43,9 @@ public abstract class Item
     public virtual void OnConsume() { }
     public ObjectContext context;
 
-    private Sprite sprite;
-    private Sprite worldSprite;
+    public Sprite sprite;
+    public Sprite worldSprite;
+    public Sprite overlay;
     public void UpdateStackWeight()
     {
         currentStackWeight = stackWeight * currentStackAmount;

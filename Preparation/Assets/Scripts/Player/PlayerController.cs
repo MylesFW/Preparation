@@ -12,12 +12,19 @@ public class PlayerController : MonoBehaviour
     // used in performing logic "On GameTick"
 
     public SimTime simTime;
-    
+
+    // Serialized States in inspector
+    public IdleState playerIdle;
+
+    public MoveStateTemplate playerWalk;
+    public MoveStateTemplate playerCrouchWalk;
+    public MoveStateTemplate playerSprint;
+
     // PCHandles the creation of the playerobject context
     // PC handles a few buff creation/deletion actions
     // Action for completing a interact (Longdark loading circle thing)
 
-    [HideInInspector] public ObjectContext playerContext;
+    [HideInInspector] public PlayerContext playerContext;
     [HideInInspector] public BuffManager buffManager;
    
     // Equiped Items, index and array
@@ -70,12 +77,11 @@ public class PlayerController : MonoBehaviour
         {
             if (playerInput.inputVector != Vector2.zero)
             {
-                fsm.EnqueueState(new WalkState(fsm, playerContext));
+                fsm.EnqueueState(new PlayerMoveState(playerWalk, fsm, playerContext));
             }
             else if(playerInput.inputVector == Vector2.zero)
             {
-                fsm.EnqueueState(new IdleState(fsm, playerContext));
-                
+                fsm.EnqueueState(new IdleState(fsm, playerContext));              
             }
         }
     }
@@ -180,9 +186,8 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        // Build player context (Important)
-        
-        playerContext = new ObjectContext
+        // Build player context (Important)        
+        playerContext = new PlayerContext
         {
             transform = transform,
             rigidbody = GetComponent<Rigidbody2D>(),

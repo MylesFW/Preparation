@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 public class CrouchIdleState : State
-{    
+{
+    public ObjectContext self;
     // Called once on State enter
     public override void Enter()
     {

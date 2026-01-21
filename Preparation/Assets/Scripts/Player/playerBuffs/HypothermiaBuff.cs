@@ -22,7 +22,7 @@ public class HypothermiaBuff : AfflictionBuff
     public HypothermiaBuff
         (
         SimTime _simTime, 
-        ObjectContext _context,
+        PlayerContext _context,
         string _name = "Hypothermia",
         string _description = "You will freeze to death unless you find somewhere warm, soon",
         string _cause = "Caused by exposure to freezing temperatures",

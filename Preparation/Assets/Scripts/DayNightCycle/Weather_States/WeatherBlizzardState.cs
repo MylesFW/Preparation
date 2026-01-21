@@ -4,6 +4,7 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 public class WeatherBlizzardState : State
 {
+    public ObjectContext self;
     // Called once on State enter
     public override void Enter()
     {

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0b63bd387f1034f8a2c81245145143, type: 3}
+  m_Name: Item Templates
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  worldSprite: {fileID: 0}
+  overlaySprite: {fileID: 0}
+  itemName: 
+  description: 
+  dropRate: 200
+  decayRate: 0
+  stackWeight: 0
+  stackable: 0
+  indefiniteShelfLife: 0
+  isBeverage: 0
+  hydrateDensity: 0
+  caloricDensity: 0

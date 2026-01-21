@@ -10,8 +10,8 @@ public class InteractManager : MonoBehaviour
     private PlayerController playerController;
     private FiniteStateMachine fsm;
     private Inputs playerInput;
-    private BaseInteractable interactable;
-    private ObjectContext playerContext;
+    private LootableInventory interactable;
+    private PlayerContext playerContext;
 
     private float interactTimer;
     public float interactCooldown;
@@ -19,22 +19,22 @@ public class InteractManager : MonoBehaviour
     private bool nearInteractable;
     private bool releaseReTrigger;
 
-    public void FinishedInteract()
+    public void FinishInteract()
     {
         interactCooldown = 1;
         fsm.EnqueueState(new IdleState(fsm, playerContext, "IdleState", 0, false, true));
     }
 
-    private void HandleInteract(float _timer, BaseInteractable _interactable)
+    private void HandleInteract(float _timer, LootableInventory _interactable)
     {
         
         if (playerInput.interactDown == true)
         {
-            fsm.EnqueueState(new InteractState(fsm, playerContext, _timer, _interactable));
+            fsm.EnqueueState(new InteractState(fsm, playerContext, _timer, _interactable, "interactState", 4, true, false));
         }
         else if (playerInput.interactUp == true)
         {
-            fsm.EnqueueState(new IdleState(fsm, playerContext, "IdleState", 5, false, false));
+            fsm.EnqueueState(new IdleState(fsm, playerContext, "IdleState", 5, false, true));
         }    
     }
 
@@ -75,7 +75,7 @@ public class InteractManager : MonoBehaviour
         //Debug.Log("Collided");
 
         GameObject interactableObject = collider.gameObject;
-        interactable = interactableObject.GetComponent<BaseInteractable>();
+        interactable = interactableObject.GetComponent<LootableInventory>();
 
         if (interactable != null)
         {

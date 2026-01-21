@@ -22,7 +22,7 @@ public class StarvationBuff : AfflictionBuff
     public StarvationBuff
         (
         SimTime _simTime,
-        ObjectContext _context,
+        PlayerContext _context,
         string _name = "Starvation",
         string _description = "You will starve to death unless you find something to eat",
         string _cause = "Caused by too much time spent without eating",

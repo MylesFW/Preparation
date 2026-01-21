@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class InteractState : State
 {
+    public PlayerContext self;
     private float interactTimer;
-    private BaseInteractable interactable;
+    private LootableInventory interactable;
+
     // Called once on State enter
     public override void Enter()
     {
-             
+        interactable.isInteracting = true;
     }
     // Called once per frame until the State is switched
     public override void Run()
@@ -20,17 +22,18 @@ public class InteractState : State
         if (interactTimer <= 0f)
         {
             interactable.ExecuteInteraction(self);
-            self.interactManager.FinishedInteract();    
+            self.interactManager.FinishInteract();    
         }        
     }  
     // Called once on State switch
     public override void Exit()
     {
-       
+        interactable.isInteracting = false;
+        interactable.interactionComplete = false;
     }
 
     //Constructor
-    public InteractState(FiniteStateMachine _fsm, ObjectContext _context, float _timer,BaseInteractable interactablecompenent, string _name = "InteractState", int _priority = 4, bool _locked = false, bool _forceOverride = false)
+    public InteractState(FiniteStateMachine _fsm, PlayerContext _context, float _timer,LootableInventory interactablecompenent, string _name = "InteractState", int _priority = 4, bool _locked = false, bool _forceOverride = false)
     {
         interactable = interactablecompenent;
         interactTimer = _timer;

@@ -5,9 +5,27 @@ using UnityEngine.UIElements;
 
 public class WalkState : State
 {
+    public PlayerContext self;
+    private Vector2 direction;
     private Vector2 velocity;
     private Vector2 position;
+     
     private float walkSpeed;
+
+    private SpriteMatrix spriteMatrix;
+    
+    private DirectionalSpriteCollection directionalSpriteSheet;
+
+    //Constructor
+    public WalkState(FiniteStateMachine _fsm, PlayerContext _context, string _name = "WalkState", int _priority = 1, bool _locked = false, bool _forceOverride = false)
+    {
+        name = _name;
+        fsm = _fsm;
+        self = _context;
+        priority = _priority;
+        locked = _locked;
+        forceOverride = _forceOverride;
+    }
 
     private void MovePlayerWithInputs(float _maxSpeed)
     {
@@ -18,6 +36,8 @@ public class WalkState : State
         // Normalize to prevent faster diagonal movement
         velocity.Normalize();
 
+        direction = new Vector2(velocity.x, velocity.y);
+
         // Clamp velocity to max speed
         velocity = Vector2.ClampMagnitude(velocity, _maxSpeed);
         velocity = position + velocity;
@@ -26,48 +46,16 @@ public class WalkState : State
         self.playerMovement.velocity = velocity;
     }
 
-    private void WalkAnimation()
+    private void SelectSpriteSheet(Vector2 _direction)
     {
-
-        if (self.playerInput.inputVector.Equals(Vector2.left))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkLeft;
-        }
-        if (self.playerInput.inputVector.Equals(Vector2.up))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkUp;
-        }
-        if (self.playerInput.inputVector.Equals(Vector2.down))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkDown;
-        }
-        if (self.playerInput.inputVector.Equals(Vector2.right))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkRight;
-        }
-        if (self.playerInput.inputVector.Equals(new Vector2(-1, 1)))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkUpLeft;
-        }
-        if (self.playerInput.inputVector.Equals(new Vector2(1, 1)))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkUpRight;
-        }
-        if (self.playerInput.inputVector.Equals(new Vector2(-1, -1)))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkDownLeft;
-        }
-        if (self.playerInput.inputVector.Equals(new Vector2(1, -1)))
-        {
-            self.animator2D.currentSheet = self.animator2D.spr_walkDownRight;
-        }
-        
-        self.animator2D.playAnimation = true;
+        //spriteMatrix.GetSheetFromVector(_direction);
     }
     
     // Called once per State Enter
     public override void Enter()
     {
+        //spriteMatrix = new SpriteMatrix(directionalSpriteSheet);
+
         walkSpeed = 0.05f;
         self.animator2D.playAnimation = true;
         self.animator2D.frameMultiplier = 0.09f;
@@ -76,22 +64,12 @@ public class WalkState : State
     public override void Run()
     {
         MovePlayerWithInputs(walkSpeed);
-        WalkAnimation();
+        SelectSpriteSheet(direction);
     }
     public override void Exit()
     {
         self.animator2D.frameIndex = 1;
         self.animator2D.playAnimation = false;
-    }
-   
-    //Constructor
-    public WalkState(FiniteStateMachine _fsm, ObjectContext _context, string _name = "WalkState", int _priority = 1, bool _locked = false, bool _forceOverride = false)
-    {
-        name = _name;
-        fsm = _fsm;
-        self = _context;
-        priority = _priority;
-        locked = _locked;
-        forceOverride = _forceOverride;
-    }
+        spriteMatrix = null;
+    }  
 }
