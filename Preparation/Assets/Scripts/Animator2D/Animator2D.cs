@@ -74,7 +74,8 @@ public class Animator2D : MonoBehaviour
     {
         if (flag == true)
         {
-           Debug.Log("Flag Reached");
+           //Debug.Log("Flag Reached");
+           flag = false; 
         }
 
         
@@ -117,7 +118,7 @@ public class Animator2D : MonoBehaviour
     public void SwitchSpriteStrip(Sprite[] newStrip)
     {
         currentStrip = newStrip;
-        Debug.Log("Sprite strip changed");
+        //Debug.Log("Sprite strip changed");
         flag = true;
     }
 }

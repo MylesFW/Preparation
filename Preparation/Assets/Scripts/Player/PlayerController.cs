@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -13,8 +14,11 @@ public class PlayerController : MonoBehaviour
 
     public SimTime simTime;
 
-    // Serialized States in inspector
-    public IdleState playerIdle;
+    // Scriptable Object State Templates
+
+    public IdleStateTemplate playerIdle;
+    public IdleStateTemplate playerTrueIdle;
+    public IdleStateTemplate playerCrouchIdle;
 
     public MoveStateTemplate playerWalk;
     public MoveStateTemplate playerCrouchWalk;
@@ -45,12 +49,8 @@ public class PlayerController : MonoBehaviour
     private bool crouchToggle;
 
     // Methods ============================================
-
     private void IdleCrouchWalk()
-    {
-        // Decides if the crouched/uncrouched version of idle and walk should be used    
-        // Crouch
-        
+    {    
         if (playerInput.crouchPressed && crouchToggle)
         {
             crouchToggle = false;
@@ -60,17 +60,15 @@ public class PlayerController : MonoBehaviour
             crouchToggle = true;
         }
         
-        // Check Crouch/Standing
-         
         if (crouchToggle)
         {
             if (playerInput.inputVector != Vector2.zero)
             {
-                fsm.EnqueueState(new CrouchWalkState(fsm, playerContext));
+                fsm.EnqueueState(new PlayerMoveState(playerCrouchWalk, fsm, playerContext));
             }
             else if (playerInput.inputVector == Vector2.zero)
             { 
-                fsm.EnqueueState(new CrouchIdleState(fsm, playerContext));
+                fsm.EnqueueState(new IdleState(playerCrouchIdle, fsm, playerContext));
             }
         }
         else if (!crouchToggle)
@@ -81,7 +79,7 @@ public class PlayerController : MonoBehaviour
             }
             else if(playerInput.inputVector == Vector2.zero)
             {
-                fsm.EnqueueState(new IdleState(fsm, playerContext));              
+               fsm.EnqueueState(new IdleState(playerIdle, fsm, playerContext));              
             }
         }
     }
@@ -89,7 +87,7 @@ public class PlayerController : MonoBehaviour
     {
         if (playerInput.sprintHold && playerInput.inputVector != Vector2.zero)
         {
-            fsm.EnqueueState(new SprintState(fsm, playerContext));
+            fsm.EnqueueState(new PlayerMoveState(playerSprint, fsm, playerContext));
             crouchToggle = false;
         }
     }
@@ -107,7 +105,7 @@ public class PlayerController : MonoBehaviour
 
         if (inventoryToggle)
         {
-            fsm.EnqueueState(new OpenBackpackState(fsm, playerContext));
+            //fsm.EnqueueState(new OpenBackpackState(fsm, playerContext));
         }
     }
     private void CycleEquiped()

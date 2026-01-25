@@ -9,12 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02834535f6907ed4c87e8b22dbb134c0, type: 3}
-  m_Name: LockerOpen
+  m_Script: {fileID: 11500000, guid: b4232e832b21aa44ab576ad9a5ebfc19, type: 3}
+  m_Name: PlayerCrouchWalk
   m_EditorClassIdentifier: 
-  priority: 0
-  locked: 0
+  name: crouchWalkState
+  priority: 1
   forceOverride: 0
-  spriteSheet: {fileID: 11400000, guid: dc53798133241b84887d574902bb34a5, type: 2}
-  animationSpeed: 1
+  locked: 0
+  walkSpeed: 0.03
   playAnimation: 1
+  loop: 1
+  animationSpeed: 0.11
+  directionSpriteSheet: {fileID: 11400000, guid: 466d5eceeac4d894eb5740f236a108c0, type: 2}

@@ -15,12 +15,13 @@ public class Inputs : MonoBehaviour
     public KeyCode checkInventoryKey = KeyCode.Tab;
     public KeyCode quickMenu        = KeyCode.Space;
     public KeyCode interactKey      = KeyCode.E;
+    public KeyCode exitKey          = KeyCode.Escape;
 
     [HideInInspector] public Vector2 mousePos;
 
     // Input check bools // pressed = once per input until reset.
     
-    [HideInInspector] public bool leftPressed, rightPresseed, upPressed, downPressed;
+    [HideInInspector] public bool leftPressed, rightPresseed, upPressed, downPressed, exitPressed;
     [HideInInspector] public bool crouchPressed, inventoryPressed, sprintHold, interactDown, interactUp;
     [HideInInspector] public bool interact, altClick, cycleEquiped, showGameControllerInfo;
 
@@ -50,7 +51,8 @@ public class Inputs : MonoBehaviour
         sprintHold = Input.GetKey(KeyCode.LeftShift);
         cycleEquiped = Input.GetKeyDown(KeyCode.Q);
         showGameControllerInfo = Input.GetKey(KeyCode.X);
-        
+        exitPressed = Input.GetKeyDown(exitKey);
+
         interact = Input.GetKey(interactKey);
         interactDown = Input.GetKeyDown(interactKey);
         interactUp = Input.GetKeyUp(interactKey);

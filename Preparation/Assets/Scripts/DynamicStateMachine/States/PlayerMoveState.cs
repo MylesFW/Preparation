@@ -6,21 +6,19 @@ using UnityEngine;
 public class PlayerMoveState : State
 {
     public PlayerContext self;
+    
     private Vector2 direction;
     private Vector2 velocity;
     private Vector2 position;
-
     private float walkSpeed;
-
     private float animSpeed;
-
     private SpriteMatrix spriteMatrix;
-
     private DirectionalSpriteCollection directionalSpriteSheet;
 
-    //Constructor
+    // Constructor
     public PlayerMoveState(MoveStateTemplate template, FiniteStateMachine _fsm, PlayerContext _context)
     {
+        // Assign default State stuff
         fsm = _fsm;
         self = _context;
         name = template.name;
@@ -28,11 +26,12 @@ public class PlayerMoveState : State
         locked = template.locked;
         forceOverride = template.forceOverride;
         
+        // Walk specific
         walkSpeed = template.walkSpeed;        
         self.animator2D.playAnimation = template.playAnimation;
         self.animator2D.frameMultiplier = template.animationSpeed;
+        self.animator2D.loop = template.loop;
         directionalSpriteSheet = template.directionSpriteSheet;
-        animSpeed = template.animationSpeed;
     }
 
     private void MovePlayerWithInputs(float _maxSpeed)
@@ -57,8 +56,6 @@ public class PlayerMoveState : State
     public override void Enter()
     {
         spriteMatrix = new SpriteMatrix();
-        self.animator2D.playAnimation = true;
-        self.animator2D.frameMultiplier = animSpeed;
     }
     // Called once per frame until state switch is called
     public override void Run()

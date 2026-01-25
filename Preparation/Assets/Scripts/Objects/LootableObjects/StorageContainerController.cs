@@ -15,6 +15,10 @@ public class StorageContainerController : MonoBehaviour
     public ClosedStateTemplate closedTemplate;
     public OpeningStateTemplate openingTemplate;
 
+    public bool isInteracting;
+    public bool interactionComplete;
+    public bool locked;
+
     public void Awake()
     {
         fsm = GetComponent<FiniteStateMachine>();
@@ -23,23 +27,24 @@ public class StorageContainerController : MonoBehaviour
     }
     public void Start()
     {
-        fsm.EnqueueState(new ClosedState(closedTemplate, fsm, context));
+        fsm.EnqueueState(new ClosedState(closedTemplate, fsm, context, locked));
     }
 
     public void Update()
     {
-        if (lootableInventory.isInteracting == true)
+        if (isInteracting == true)
         {
             fsm.EnqueueState(new OpeningState(openingTemplate, fsm, context));           
         }
-        else if (lootableInventory.isInteracting == false)
+        else if (isInteracting == false)
         {
-            fsm.EnqueueState(new ClosedState(closedTemplate, fsm, context));
+            fsm.EnqueueState(new ClosedState(closedTemplate, fsm, context, locked));
         }
 
-        if (lootableInventory.interactionComplete == true)
+        if (interactionComplete == true)
         {
-            fsm.EnqueueState(new ClosedState(closedTemplate, fsm, context));
+            fsm.EnqueueState(new ClosedState(closedTemplate, fsm, context, locked));
+            interactionComplete = false;
         }
     }
 

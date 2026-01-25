@@ -8,7 +8,8 @@ public class Inventory : MonoBehaviour
     private PlayerController playerController;
     private ObjectContext ItemContext;
     private Item guiItemIndex;
-    private int listIndex;
+    public int listIndex;
+    public bool showInvUI;
 
     public int GetItemIndexByName(string item_name)
     {
@@ -84,6 +85,7 @@ public class Inventory : MonoBehaviour
         playerController = GetComponent<PlayerController>();
         ItemContext = playerController.playerContext;
         listIndex = 0;
+        showInvUI = false;
     }
 
     // Update is called once per frame
@@ -98,38 +100,56 @@ public class Inventory : MonoBehaviour
             listIndex++;
         }
         
+        if (playerController.playerContext.playerInput.inventoryPressed)
+        {
+            if (showInvUI == false)
+            {
+                showInvUI = true;
+            }
+            else
+            {
+                showInvUI = false;
+            }
+        }
+
         listIndex = Mathf.Clamp(listIndex, 0, inventoryList.Count - 1);
     }
 
     private void OnGUI()
     {
-
-        GUI.Label(new Rect(1410, 340, 250, 20),"Item"); 
-        GUI.Label(new Rect(1490, 340, 250, 20),"Qty");
-        GUI.Label(new Rect(1550, 340, 250, 20), "Weight");
-        GUI.Label(new Rect(1600, 340, 250, 20), "Condition");
-
-        if (GUI.Button(new Rect(1400, 300, 125, 40), "Consume/Use"))
-            UseConsumeItem(listIndex);
-
-        GUI.Button(new Rect(1540, 300, 125, 40), "Drop Item");
-
-        if (inventoryList.Count != 0)
+        if (showInvUI == true)
         {
-            int heightDisplacement = 20;
-            for (int i = 0; i < inventoryList.Count; i++)
+            // origins
+            int _x = 430;
+            int _y = 340;
+
+            GUI.Label(new Rect(_x, _y, 250, 20), "Item");
+            GUI.Label(new Rect(_x + 80, _y, 250, 20), "Qty");
+            GUI.Label(new Rect(_x + 140, _y, 250, 20), "Weight");
+            GUI.Label(new Rect(_x + 190, _y, 250, 20), "Condition");
+
+            if (GUI.Button(new Rect(_x - 10, _y - 40, 125, 40), "Consume/Use"))
+                UseConsumeItem(listIndex);
+
+            GUI.Button(new Rect(_x + 130, _y - 40, 125, 40), "Drop Item");
+
+            if (inventoryList.Count != 0)
             {
-                int offset = 0;
-                if (i == listIndex) 
+                int heightDisplacement = 20;
+                for (int i = 0; i < inventoryList.Count; i++)
                 {
-                    offset = 10;
+                    int offset = 0;
+                    if (i == listIndex)
+                    {
+                        offset = 10;
+                    }
+
+                    guiItemIndex = inventoryList[i];
+                    GUI.Label(new Rect(_x - offset, _y + 40 + heightDisplacement * i, 300, 20), guiItemIndex.name);
+                    GUI.Label(new Rect(_x + 80 - offset, _y + 40 + heightDisplacement * i, 300, 20), guiItemIndex.currentStackAmount.ToString() + "x");
+                    GUI.Label(new Rect(_x + 140 - offset, _y + 40 + heightDisplacement * i, 300, 20), guiItemIndex.currentStackWeight.ToString() + " kg");
+                    GUI.Label(new Rect(_x + 190 - offset, _y + 40 + heightDisplacement * i, 300, 20), guiItemIndex.condition.ToString() + " %");
                 }
-                    
-                guiItemIndex = inventoryList[i];
-                GUI.Label(new Rect(1410 - offset, 380 + heightDisplacement * i, 300, 20), guiItemIndex.name);              
-                GUI.Label(new Rect(1490 - offset, 380 + heightDisplacement * i, 300, 20), guiItemIndex.currentStackAmount.ToString() + "x");
-                GUI.Label(new Rect(1550 - offset, 380 + heightDisplacement * i, 300, 20), guiItemIndex.currentStackWeight.ToString() + " kg");
-                GUI.Label(new Rect(1600 - offset, 380 + heightDisplacement * i, 300, 20), guiItemIndex.condition.ToString() + " %");
             }
         }
     }

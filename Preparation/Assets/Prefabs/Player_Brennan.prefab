@@ -333,6 +333,9 @@ MonoBehaviour:
   playAnimation: 0
   frameMultiplier: 1
   frameIndex: 0
+  frameSpeed: 0
+  loop: 0
+  reverse: 0
 --- !u!114 &7515526577556364565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,9 +349,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   simTime: {fileID: 0}
+  playerIdle: {fileID: 11400000, guid: 537f22d11da5d584a8e31989fab58689, type: 2}
+  playerTrueIdle: {fileID: 0}
+  playerCrouchIdle: {fileID: 11400000, guid: 6815a33be9089554b825cc5fd04a8dc4, type: 2}
   playerWalk: {fileID: 11400000, guid: 814efde5387135748a533bbd366bee69, type: 2}
-  playerCrouchWalk: {fileID: 0}
-  playerSprint: {fileID: 0}
+  playerCrouchWalk: {fileID: 11400000, guid: 6b72d0d94e2a9814faa6cdf69ac819c3, type: 2}
+  playerSprint: {fileID: 11400000, guid: 54425bcf7afe2914ab73dbc802f75783, type: 2}
   buffManager: {fileID: 7515526577556364574}
   currentEquiped: 0
 --- !u!114 &7515526577556364782
@@ -593,4 +599,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7ea788ccf7b95840a9c65218b9f4a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactCooldown: 0
+  maxInteractCooldown: 0

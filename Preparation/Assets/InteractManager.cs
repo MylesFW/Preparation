@@ -6,44 +6,25 @@ public class InteractManager : MonoBehaviour
 {
     // Brennan
     // 1/7/26
+    // Processes player interact inputs. Enqueues interact state. Communicates with interactable gameobject
 
+    public int maxInteractCooldown;
+    
     private PlayerController playerController;
     private FiniteStateMachine fsm;
     private Inputs playerInput;
-    private LootableInventory interactable;
-    private PlayerContext playerContext;
-
-    private float interactTimer;
-    public float interactCooldown;
+    private PlayerContext playerContext;   
     
-    private bool nearInteractable;
+    private IInteractable inst_interactable;
+    
+    private float interactCooldown; // input cooldown preventing retrigger, not the state's lifetime
     private bool releaseReTrigger;
-
-    public void FinishInteract()
-    {
-        interactCooldown = 1;
-        fsm.EnqueueState(new IdleState(fsm, playerContext, "IdleState", 0, false, true));
-    }
-
-    private void HandleInteract(float _timer, LootableInventory _interactable)
-    {
-        
-        if (playerInput.interactDown == true)
-        {
-            fsm.EnqueueState(new InteractState(fsm, playerContext, _timer, _interactable, "interactState", 4, true, false));
-        }
-        else if (playerInput.interactUp == true)
-        {
-            fsm.EnqueueState(new IdleState(fsm, playerContext, "IdleState", 5, false, true));
-        }    
-    }
-
+    
     private void Awake()
     {
         fsm = GetComponent<FiniteStateMachine>();
         playerInput = GetComponent<Inputs>();
     }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -51,44 +32,54 @@ public class InteractManager : MonoBehaviour
         playerContext = playerController.playerContext;
         releaseReTrigger = true;
     }
-
     // Update is called once per frame
     void Update()
     {
-        if (playerInput.interactUp)
-        {
-            releaseReTrigger = true;
-            
-            fsm.EnqueueState(new IdleState(fsm, playerContext, "IdleState", 0, false, true));
-            
-            Debug.Log("Interact Override Lifted, ready to interact");
-        }
 
-        if (nearInteractable == true && playerInput.interact)
+        if (inst_interactable == null)
         {
-            fsm.EnqueueState(new InteractState(fsm, playerContext, interactTimer, interactable));
+            return;
+        }
+        else
+        {   
+            if (playerInput.interactUp)
+            {
+                releaseReTrigger = false;
+                interactCooldown = maxInteractCooldown;
+                fsm.EnqueueState(new IdleState(playerController.playerIdle, fsm, playerContext));
+
+                Debug.Log("Interact Override Lifted, ready to interact");
+            }
+            else if (playerInput.interact == true && releaseReTrigger == true)
+            {
+                inst_interactable.QueueInteract(this.gameObject, inst_interactable);
+            }
+        }
+        // Release interact gate if cooldown == O
+        if (interactCooldown > 0)
+        {
+            interactCooldown -= Time.deltaTime;
+        }
+        else if (interactCooldown <= 0)
+        {
+            releaseReTrigger = true;     
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collider)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        //Debug.Log("Collided");
-
-        GameObject interactableObject = collider.gameObject;
-        interactable = interactableObject.GetComponent<LootableInventory>();
-
-        if (interactable != null)
+        if (other.TryGetComponent<IInteractable>(out var interactable))
         {
-            nearInteractable = true;
-            interactTimer = interactable.interactTimer;
-        }
-        else
-        {
-            nearInteractable = false;
+            inst_interactable = interactable;        
         }
     }
     private void OnTriggerExit2D(Collider2D collider)
     {
-        nearInteractable = false;
+        inst_interactable = null;
+    }
+    public void FinishInteract()
+    {
+        interactCooldown = maxInteractCooldown;
+        fsm.EnqueueState(new IdleState(playerController.playerIdle, fsm, playerContext));
     }
 }

@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.UI;
 using UnityEngine;
 
-public class LootableInventory : BaseInteractable
+
+public class LootableInventory : BaseInteractable, IInteractable
 {
     // Brennan 1/17/26
     // Handles the final accessable loot Data available to the player on loot interaction
@@ -12,7 +12,10 @@ public class LootableInventory : BaseInteractable
     // Declare pieces needed to generate items for player
     public PlayerContext playerContext;
     public PlayerController playerController;
+    public StorageContainerController storageContainerController;
     public Inventory inventory;
+    public StorableInventory storableInventory;
+    public InteractTemplate interactTemplate;
 
     [HideInInspector] public bool wasLooted;
     [HideInInspector] public bool isInteracting;
@@ -25,12 +28,17 @@ public class LootableInventory : BaseInteractable
     public List<ClothesItemTemplate> clothesItems = new List<ClothesItemTemplate>();
     public List<MaterialItemTemplate> materialItems = new List<MaterialItemTemplate>();
 
+
     // Privs
     private ItemUtils itemUtils;
+
+    private bool flag;
 
     private void Awake()
     {
         itemUtils = GetComponent<ItemUtils>();
+        storableInventory = GetComponent<StorableInventory>();
+        storageContainerController = GetComponent<StorageContainerController>();    
     }
     
     private void Start()
@@ -38,6 +46,7 @@ public class LootableInventory : BaseInteractable
         wasLooted = false;
         isInteracting = false;
         playerContext = playerController.playerContext;
+        flag = false;
     }
 
     public void GenerateItemsFromTable()
@@ -50,9 +59,20 @@ public class LootableInventory : BaseInteractable
         itemUtils.ManufactureMaterialItemInstances(materialItems, inventory, playerContext);
     }
 
-    public override void ExecuteInteraction(ObjectContext _self)
+    public void QueueInteract(GameObject other, IInteractable self)
     {
-        
+
+        float intTimer = interactTimer;
+        storageContainerController.isInteracting = true;
+
+        FiniteStateMachine fsm = other.GetComponent<FiniteStateMachine>();
+        PlayerController controller = other.GetComponent<PlayerController>();
+
+        fsm.EnqueueState(new InteractState(interactTemplate, fsm, controller.playerContext, self));
+    }    
+    
+    public void Interact(GameObject other)
+    {
         // Perform Interaction     
         if (wasLooted == true)
         {
@@ -67,6 +87,15 @@ public class LootableInventory : BaseInteractable
             firstAidItems.Clear();
             materialItems.Clear();
         }
-        interactionComplete = true;
+
+        storageContainerController.interactionComplete = true;
+    }
+    
+    public void EndInteraction()
+    {
+        storageContainerController.isInteracting = false;
+        flag = true;
+        storableInventory.enabled = true;
+        Destroy(this);
     }
 }

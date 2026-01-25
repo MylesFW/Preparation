@@ -5,6 +5,28 @@ using UnityEngine;
 public class IdleState : State
 {
     public ObjectContext self;
+    public DirectionalSpriteCollection directionalSpriteSheet;   
+    public float animSpeed;
+    private SpriteMatrix spriteMatrix;
+
+    //Constructor
+    public IdleState(IdleStateTemplate template, FiniteStateMachine _fsm, ObjectContext _context)
+    {
+        fsm = _fsm;
+        name = template.name;
+        self = _context;
+        priority = template.priority;
+        locked = template.locked;
+        forceOverride = template.forceOverride;
+
+        self.animator2D.playAnimation = template.playAnimation;
+        self.animator2D.frameMultiplier = template.animationSpeed;
+        self.animator2D.loop = template.loop;
+        directionalSpriteSheet = template.directionSpriteSheet;
+        animSpeed = template.animationSpeed;
+
+    }
+
     // Called once on State enter
     public override void Enter()
     {
@@ -19,16 +41,5 @@ public class IdleState : State
     public override void Exit()
     {
 
-    }
-
-    //Constructor
-    public IdleState(FiniteStateMachine _fsm, ObjectContext _context, string _name = "IdleState", int _priority = 0, bool _locked = false, bool _forceOverride = false)
-    {       
-        fsm = _fsm;
-        name = _name;
-        self = _context;
-        priority = _priority;
-        locked = _locked;
-        forceOverride = _forceOverride;
     }
 }

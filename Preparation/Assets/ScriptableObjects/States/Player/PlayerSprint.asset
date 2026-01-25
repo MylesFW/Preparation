@@ -9,14 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23f583892d81ccf438bfaf2b2008ca28, type: 3}
-  m_Name: LockerClosing
+  m_Script: {fileID: 11500000, guid: b4232e832b21aa44ab576ad9a5ebfc19, type: 3}
+  m_Name: PlayerSprint
   m_EditorClassIdentifier: 
+  name: SprintState
   priority: 2
-  locked: 0
   forceOverride: 0
-  spriteSheet: {fileID: 11400000, guid: dc53798133241b84887d574902bb34a5, type: 2}
-  animationSpeed: 1
+  locked: 0
+  walkSpeed: 0.1
   playAnimation: 1
-  loopAnim: 0
-  reverseAnim: 1
+  loop: 1
+  animationSpeed: 0.045
+  directionSpriteSheet: {fileID: 11400000, guid: 466d5eceeac4d894eb5740f236a108c0, type: 2}

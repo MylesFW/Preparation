@@ -11,13 +11,13 @@ public class ClosedState : State
     public bool loopAnim;
     public bool reverseAnime;
 
-    public ClosedState(ClosedStateTemplate template, FiniteStateMachine _fsm, ObjectContext _context)
+    public ClosedState(ClosedStateTemplate template, FiniteStateMachine _fsm, ObjectContext _context, bool _locked)
     {
         fsm = _fsm;
         self = _context;
         name = template.name;
         priority = template.priority;
-        locked = template.locked;
+        locked = _locked;
         forceOverride = template.forceOverride;
 
         self.animator2D.playAnimation = template.playAnimation;

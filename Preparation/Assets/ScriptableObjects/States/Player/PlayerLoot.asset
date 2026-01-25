@@ -9,14 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4232e832b21aa44ab576ad9a5ebfc19, type: 3}
-  m_Name: playerWalk
+  m_Script: {fileID: 11500000, guid: b3578ad7de90e6a48889e03769fbed0f, type: 3}
+  m_Name: PlayerLoot
   m_EditorClassIdentifier: 
-  name: WalkState
-  priority: 1
+  name: PlayerLoot
+  priority: 4
   forceOverride: 0
   locked: 0
-  walkSpeed: 0.05
   playAnimation: 1
+  loop: 1
+  indefinite: 0
   animationSpeed: 0.09
-  directionSpriteSheet: {fileID: 11400000, guid: 466d5eceeac4d894eb5740f236a108c0, type: 2}
+  interactTimer: 0.25
+  directionSpriteSheet: {fileID: 0}
