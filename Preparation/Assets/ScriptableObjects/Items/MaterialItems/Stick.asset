@@ -19,6 +19,6 @@ MonoBehaviour:
   description: Used for crafting and fuel
   dropRate: 82
   decayRate: 0
-  stackWeight: 0.25
-  stackable: 1
-  indefiniteShelfLife: 1
+  baseWeight: 0.05
+  isStackable: 1
+  isIndefinite: 1

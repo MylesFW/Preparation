@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3578ad7de90e6a48889e03769fbed0f, type: 3}
   m_Name: PlayerLoot
   m_EditorClassIdentifier: 
-  name: PlayerLoot
+  stateName: 
   priority: 4
   forceOverride: 0
-  locked: 0
+  locked: 1
+  interactMode: 0
   playAnimation: 1
   loop: 1
   indefinite: 0
   animationSpeed: 0.09
-  interactTimer: 0.25
+  interactTimer: 1
   directionSpriteSheet: {fileID: 0}

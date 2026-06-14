@@ -19,9 +19,9 @@ MonoBehaviour:
   description: '"Fresh" from the sea'
   dropRate: 112
   decayRate: 0.01
-  stackWeight: 0.4
-  stackable: 0
-  indefiniteShelfLife: 0
+  baseWeight: 0.45
+  isStackable: 0
+  isIndefinite: 0
   isBeverage: 0
   hydrateDensity: 0.25
   caloricDensity: 1000

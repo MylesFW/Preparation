@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
   worldSprite: {fileID: 0}
+  overlaySprite: {fileID: 0}
   itemName: Chuck Beans
   description: Now with 23% more Bean!
   dropRate: 148
   decayRate: 0.01
-  stackWeight: 0.5
-  stackable: 0
-  indefiniteShelfLife: 0
+  baseWeight: 0.45
+  isStackable: 0
+  isIndefinite: 0
   isBeverage: 0
   hydrateDensity: 0
   caloricDensity: 1000

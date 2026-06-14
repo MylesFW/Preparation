@@ -31,8 +31,6 @@ public class ClosedState : State
     }
     public override void Enter()
     {
-
-
         self.animator2D.currentStrip = spriteSheet.spriteStrips;
         self.animator2D.playAnimation = true;
         self.animator2D.frameMultiplier = animSpeed;

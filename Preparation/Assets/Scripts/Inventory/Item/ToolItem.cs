@@ -4,59 +4,30 @@ using UnityEngine;
 
 public class ToolItem : Item
 {
+    // Tool Item Class, subtype of Item. Contains fields and methods specific to tool items
+    // Data stored in TemplateSO, passed in on construction
+    // Brennan RF(1): 2/21/26
+    
+    // Fields
     public bool equipable;
-    public ToolItemTemplate template;
-    public ObjectContext playerContext;
-    
-    public virtual void OnInteract()
+    public readonly ToolItemDataSO data;
+
+    // Constructor
+    public ToolItem(ToolItemDataSO _Data, PlayerContext _context)
     {
-    
+        data = _Data;
+        Context = _context;
+        ItemName = data.ItemName;
+        Description = data.Description;
+        BaseWeight = data.BaseWeight;
+        IsStackable = data.IsStackable;
     }
 
-    public ToolItem(ToolItemTemplate _template, ObjectContext _context, float _weight, float _condition, int _currentStackAmount = 1)
+    // Methods
+    public override Item Copy()
     {
-        // pass vars
-        template = _template;
-
-        playerContext = _context;
-
-        sprite = _template.sprite;
-        worldSprite = _template.worldSprite;
-        overlay = _template.overlaySprite;
-
-        name = _template.itemName;
-
-        description = _template.description;
-
-        stackable = _template.stackable;
-
-        indefiniteShelfLife = _template.indefiniteShelfLife;
-
-        currentStackAmount = _currentStackAmount;
-
-        stackWeight = _template.stackWeight;
-
-        decayRate = _template.decayRate;
-
-        condition = _condition;
-
-        if (_weight <= 0)
-        {
-            currentWeight = stackWeight;
-        }
-        else if (_weight > 0)
-        {
-            currentWeight = _weight;
-        }
-
-        if (stackable == false)
-        {
-            currentStackAmount = Mathf.Clamp(currentStackAmount, 1f, 1f);
-            currentStackWeight = currentWeight * currentStackAmount;
-        }
-        else if (stackable == true)
-        {
-            currentStackWeight = stackWeight * currentStackAmount;
-        }
+        ToolItem copy = new ToolItem(data, Context);
+        copy.BaseWeight = BaseWeight;
+        return copy;
     }
 }

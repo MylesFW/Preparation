@@ -22,9 +22,9 @@ public class IdleState : State
         self.animator2D.playAnimation = template.playAnimation;
         self.animator2D.frameMultiplier = template.animationSpeed;
         self.animator2D.loop = template.loop;
+       
         directionalSpriteSheet = template.directionSpriteSheet;
         animSpeed = template.animationSpeed;
-
     }
 
     // Called once on State enter

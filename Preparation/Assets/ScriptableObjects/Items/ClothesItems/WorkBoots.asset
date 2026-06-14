@@ -19,6 +19,6 @@ MonoBehaviour:
   description: Ruggad men only
   dropRate: 75
   decayRate: 0
-  stackWeight: 1
-  stackable: 0
-  indefiniteShelfLife: 0
+  baseWeight: 2.5
+  isStackable: 0
+  isIndefinite: 1

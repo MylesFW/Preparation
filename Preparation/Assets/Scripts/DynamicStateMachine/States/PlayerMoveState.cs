@@ -36,19 +36,17 @@ public class PlayerMoveState : State
 
     private void MovePlayerWithInputs(float _maxSpeed)
     {
-        // Set position and velocity to the players pos and vel.
+        // vec
         position = new Vector2(self.transform.position.x, self.transform.position.y);
         velocity = self.playerInput.inputVector;
         direction = new Vector2(velocity.x, velocity.y);
         
-        // Normalize to prevent faster diagonal movement
         velocity.Normalize();
 
-        // Clamp velocity to max speed
         velocity = Vector2.ClampMagnitude(velocity, _maxSpeed);
         velocity = position + velocity;
 
-        // Set player velocity to the new calculated walk velocity
+        // apply velocity
         self.playerMovement.velocity = velocity;
     }
 
@@ -62,7 +60,10 @@ public class PlayerMoveState : State
     {
         MovePlayerWithInputs(walkSpeed);
         Sprite[] newStrip = spriteMatrix.GetStripFromDirection(directionalSpriteSheet, direction);        
-        self.animator2D.SwitchSpriteStrip(newStrip);
+        if (newStrip != null)
+        {
+            self.animator2D.SwitchSpriteStrip(newStrip);
+        }
     }
     public override void Exit()
     {

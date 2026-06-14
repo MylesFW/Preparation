@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
   worldSprite: {fileID: 0}
+  overlaySprite: {fileID: 0}
   itemName: Bandages
   description: cures bleeding
   dropRate: 64
   decayRate: 0
-  stackWeight: 0.05
-  stackable: 1
-  indefiniteShelfLife: 0
+  baseWeight: 0.01
+  isStackable: 1
+  isIndefinite: 1

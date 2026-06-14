@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
   worldSprite: {fileID: 0}
+  overlaySprite: {fileID: 0}
   itemName: Can Opener
   description: A metal tool designed to open cans
   dropRate: 33
-  decayRate: 0
-  stackWeight: 1
-  stackable: 0
-  indefiniteShelfLife: 0
+  decayRate: 0.001
+  baseWeight: 0.05
+  isStackable: 0
+  isIndefinite: 1

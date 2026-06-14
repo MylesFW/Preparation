@@ -19,4 +19,5 @@ public class PlayerContext : ObjectContext
     public PlayerController playerController;
     public InteractManager interactManager;
     public Inventory inventory;
+    public InteractLoadingBar interactLoadingBar;
 }

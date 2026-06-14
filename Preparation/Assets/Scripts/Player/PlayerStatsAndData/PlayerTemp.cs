@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerTemp : MonoBehaviour
+public class PlayerTemp : MonoBehaviour, ISavable
 {
 
+    public VoidEventChannelSO onSimulationTick;
     public WeatherController weather;
     public SimTime simTime;
 
@@ -24,7 +25,7 @@ public class PlayerTemp : MonoBehaviour
 
     private void HandlePlayerTemps()
     {
-        feelsLike = weather.ambientAirTemp;
+        feelsLike = weather.AmbientAirTemp;
         feelsLike += weather.windChill;
 
         if (feelsLike < 0 && currentPlayerTemp > 0)
@@ -40,15 +41,25 @@ public class PlayerTemp : MonoBehaviour
                 
 
     private void Awake()
-    {
-                
+    {               
         maxPlayerTemp = 100;
         currentPlayerTemp = maxPlayerTemp;
 
         severityMultiplier = 0.0098f;
 
-        simTime.OnSimulationTick += HandlePlayerTemps;
+       onSimulationTick.onEventRaised += HandlePlayerTemps;
     }
+
+    private void Start()
+    {
+        GameObject inst = ObjectRegistry.instance.Get("WeatherCycle");
+        if (inst != null)
+        {
+            var wcycle = inst.GetComponent<WeatherController>();
+            weather = wcycle;
+        }
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -67,10 +78,27 @@ public class PlayerTemp : MonoBehaviour
             isCold?.Invoke();
         }
     }
+
     private void OnGUI()
     {
         GUI.Label(new Rect(0, 860, 300, 20), "Feels Like: " + feelsLikeInt.ToString() + " C");
         GUI.Label(new Rect(0, 880, 300, 20), "Freezing: " + playerTempPercentage.ToString() + "%");
         
+    }
+
+    GameData ISavable.SaveInstance(GameData data)
+    {
+        data.playerData.playerTemp = currentPlayerTemp;
+        return data;
+    }
+
+    void ISavable.LoadInstance(GameData data)
+    {
+        currentPlayerTemp = data.playerData.playerTemp;
+    }
+
+    void ISavable.NewGame()
+    {
+        currentPlayerTemp = maxPlayerTemp;
     }
 }

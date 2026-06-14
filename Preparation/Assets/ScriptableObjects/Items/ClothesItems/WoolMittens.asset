@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
   worldSprite: {fileID: 0}
+  overlaySprite: {fileID: 0}
   itemName: Wool Mittens
   description: Warm, but not waterproof
   dropRate: 106
   decayRate: 0
-  stackWeight: 0
-  stackable: 0
-  indefiniteShelfLife: 0
+  baseWeight: 0.18
+  isStackable: 0
+  isIndefinite: 1

@@ -4,50 +4,49 @@ using UnityEngine;
 
 public class ItemUtils : MonoBehaviour
 {
-    private Inventory destinationInventory;
-    public void ManufactureFoodItemInstances(List<FoodItemTemplate> fromList, Inventory _inventory, PlayerContext objectContext)
+    public void ManufactureFoodItemInstances(List<FoodItemDataSO> fromList, List<Item> _inventory, PlayerContext _context)
     {
         for (int i = 0; i <= fromList.Count - 1; i++) 
-        { 
-            FoodItemTemplate _template = fromList[i];
-            Item newItem = new FoodItem(_template, objectContext, _template.stackWeight, 100);
-            _inventory.AddItem(newItem);
+        {
+            FoodItemDataSO data = fromList[i];
+            Item newItem = new FoodItem(data, _context);
+            _inventory.Add(newItem);
         }
     }
-    public void ManufactureToolItemInstances(List<ToolItemTemplate> fromList, Inventory _inventory, ObjectContext objectContext)
+    public void ManufactureToolItemInstances(List<ToolItemDataSO> fromList, List<Item> _inventory, PlayerContext _context)
     {
         for (int i = 0; i <= fromList.Count - 1; i++)
         {
-            ToolItemTemplate _template = fromList[i];
-            Item newItem = new ToolItem(_template, objectContext, _template.stackWeight, 100);
-            _inventory.AddItem(newItem);
+            ToolItemDataSO data = fromList[i];
+            Item newItem = new ToolItem(data, _context);
+            _inventory.Add(newItem);
         }
     }
-    public void ManufactureFirstAidItemInstances(List<FirstAidItemTemplate> fromList, Inventory _inventory, ObjectContext objectContext)
+    public void ManufactureFirstAidItemInstances(List<FirstAidItemDataSO> fromList, List<Item> _inventory, PlayerContext _context)
     {
         for (int i = 0; i <= fromList.Count - 1; i++)
         {
-            FirstAidItemTemplate _template = fromList[i];
-            Item newItem = new FirstAidItem(_template, objectContext, _template.stackWeight, 100);
-            _inventory.AddItem(newItem);
+            FirstAidItemDataSO data = fromList[i];
+            Item newItem = new FirstAidItem(data, _context);
+            _inventory.Add(newItem);
         }
     }
-    public void ManufactureClothesItemInstances(List<ClothesItemTemplate> fromList, Inventory _inventory, ObjectContext objectContext)
+    public void ManufactureClothesItemInstances(List<ClothesItemDataSO> fromList, List<Item> _inventory, PlayerContext _context)
     {
         for (int i = 0; i <= fromList.Count - 1; i++)
         {
-            ClothesItemTemplate _template = fromList[i];
-            Item newItem = new ClothesItem(_template, objectContext, _template.stackWeight, 100);
-            _inventory.AddItem(newItem);
+            ClothesItemDataSO data = fromList[i];
+            Item newItem = new ClothesItem(data, _context);
+            _inventory.Add(newItem);
         }
     }
-    public void ManufactureMaterialItemInstances(List<MaterialItemTemplate> fromList, Inventory _inventory, ObjectContext objectContext)
+    public void ManufactureMaterialItemInstances(List<MaterialItemDataSO> fromList, List<Item> _inventory, PlayerContext _context)
     {
         for (int i = 0; i <= fromList.Count - 1; i++)
         {
-            MaterialItemTemplate _template = fromList[i];
-            Item newItem = new MaterialItem(_template, objectContext, _template.stackWeight, 100);
-            _inventory.AddItem(newItem);
+            MaterialItemDataSO data = fromList[i];
+            Item newItem = new MaterialItem(data, _context);
+            _inventory.Add(newItem);
         }
     }
 }
