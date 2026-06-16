@@ -22,7 +22,7 @@ public class DehydrationBuff : AfflictionBuff
     public DehydrationBuff
         (
         SimTime _simTime,
-        ObjectContext _context,
+        PlayerContext _context,
         string _name = "Dehydration",
         string _description = "Your health will decline rapidly unless you drink water soon",
         string _cause = "Caused by not drinking enough water",

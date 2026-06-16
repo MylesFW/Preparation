@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour, ISavable
 {
     public float currentHealth;
     public float maxHealth;
@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public bool invulnerable;
     public bool drainHealth;
 
+    public VoidEventChannelSO onSimulationTick;
     public Action isAfflicted;
     public Action isCritical;
     public Action isDead;
@@ -30,11 +31,11 @@ public class PlayerHealth : MonoBehaviour
     {
         if (drainHealth == true)
         {
-            simTime.OnSimulationTick += HandleHealthDrain;
+            onSimulationTick.onEventRaised += HandleHealthDrain;
         }
         else if (drainHealth == false)
         {
-            simTime.OnSimulationTick -= HandleHealthDrain;
+            onSimulationTick.onEventRaised -= HandleHealthDrain;
         }
     }
     private void HandleHealthDrain()
@@ -93,5 +94,19 @@ public class PlayerHealth : MonoBehaviour
     private void OnGUI()
     {
         GUI.Label(new Rect(0, 960, 300, 20), "Health: " + myHealth.ToString() + "%");
+    }
+    GameData ISavable.SaveInstance(GameData data)
+    {
+        data.playerData.health = currentHealth;
+        return data;
+    }
+
+    void ISavable.LoadInstance(GameData data)
+    {
+        currentHealth = data.playerData.health;
+    }
+    void ISavable.NewGame()
+    {
+        currentHealth = maxHealth;
     }
 }

@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCalories : MonoBehaviour
+public class PlayerCalories : MonoBehaviour, ISavable
 {
     public float currentCalories;
     public float maxCalories;
     public float burnRate;
     public float maxBurnRate;
+
+    public VoidEventChannelSO onSimulationTick;
     
     public int kcal;
 
@@ -34,7 +36,7 @@ public class PlayerCalories : MonoBehaviour
         burnRate = 1.4f;
 
 
-        simTime.OnSimulationTick += HandleCalorieBurn;
+        onSimulationTick.onEventRaised += HandleCalorieBurn;
     }
 
     // Update is called once per frame
@@ -56,5 +58,19 @@ public class PlayerCalories : MonoBehaviour
     private void OnGUI()
     {
         GUI.Label(new Rect(0, 940, 300, 20), "Food: " + kcal.ToString() + " Kcal");
+    }
+    GameData ISavable.SaveInstance(GameData data)
+    {
+        data.playerData.calories = currentCalories;
+        return data;
+    }
+
+    void ISavable.LoadInstance(GameData data)
+    {
+        currentCalories = data.playerData.calories;
+    }
+    void ISavable.NewGame()
+    {
+        currentCalories = maxCalories;
     }
 }

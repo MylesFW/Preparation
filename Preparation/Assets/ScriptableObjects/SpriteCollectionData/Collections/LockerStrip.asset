@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc3b8d82793a8a43b05036198a2e03d, type: 3}
+  m_Name: LockerStrip
+  m_EditorClassIdentifier: 
+  spriteStrips:
+  - {fileID: -6636113927181856235, guid: 1e2aa66d8967216499766b358d207014, type: 3}
+  - {fileID: 509016384560633067, guid: 1e2aa66d8967216499766b358d207014, type: 3}
+  - {fileID: -4048999581634661738, guid: 1e2aa66d8967216499766b358d207014, type: 3}
+  - {fileID: 4553326878991687446, guid: 1e2aa66d8967216499766b358d207014, type: 3}
+  - {fileID: 2592355365673588696, guid: 1e2aa66d8967216499766b358d207014, type: 3}

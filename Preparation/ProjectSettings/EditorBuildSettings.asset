@@ -23,4 +23,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test Scenes/Abandoned House/Abandoned_House.unity
     guid: a07b6ebd3d129a04382da487035b6715
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/SaveSelect.unity
+    guid: 05ff623f1904eea42ab5f27505d21dcc
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/DeathScene.unity
+    guid: 62e11b2a4c161cc4182cdceaead5c569
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/LoadScene.unity
+    guid: 14b04b9ce5347f849a6b0c83b0da2a99
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/MainMenu.unity
+    guid: 2e3d28eb26e7ccf4cbae17737e241bbd
+  - enabled: 1
+    path: Assets/Scenes/SaveLoadSceneTest/Scene_2.unity
+    guid: 4e502663c4bf7a44cafb54a9ff02807b
+  - enabled: 1
+    path: Assets/Scenes/SaveLoadSceneTest/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Test Scenes/BrennanTestSceneTwo.unity
+    guid: 5cfaf0acf202b0e43a1a877d802a05fa
+  - enabled: 1
+    path: Assets/Scenes/Test Scenes/TestSceneTwo.unity
+    guid: 3587023ac0599dd4ba2122b9269102d3
   m_configObjects: {}

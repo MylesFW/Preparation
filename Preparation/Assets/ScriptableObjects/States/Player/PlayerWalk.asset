@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4232e832b21aa44ab576ad9a5ebfc19, type: 3}
+  m_Name: PlayerWalk
+  m_EditorClassIdentifier: 
+  name: WalkState
+  priority: 1
+  forceOverride: 0
+  locked: 0
+  walkSpeed: 0.05
+  playAnimation: 1
+  loop: 1
+  animationSpeed: 0.09
+  directionSpriteSheet: {fileID: 11400000, guid: 466d5eceeac4d894eb5740f236a108c0, type: 2}

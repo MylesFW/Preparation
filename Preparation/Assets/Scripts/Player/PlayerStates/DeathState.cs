@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DeathState : State
 {
+    public ObjectContext self;
     public override void Enter()
     {
 

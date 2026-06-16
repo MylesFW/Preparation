@@ -9,8 +9,7 @@ public abstract class State
     public bool forceOverride   = false;
     public string name = "BaseState"; 
     protected FiniteStateMachine fsm;
-    protected ObjectContext self;
-   
+    
     public virtual void Enter() { }
     public virtual void Run() { }
     public virtual void Exit() { }

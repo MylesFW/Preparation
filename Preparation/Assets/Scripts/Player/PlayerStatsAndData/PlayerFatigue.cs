@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerFatigue : MonoBehaviour
+public class PlayerFatigue : MonoBehaviour, ISavable
 {
+
+    public VoidEventChannelSO onSimulationTick;
     public float currentFatigue;
     public float maxFatigue;
     public float drainRate;
@@ -31,7 +33,7 @@ public class PlayerFatigue : MonoBehaviour
         maxDrainRate = 0.1f;
         drainRate = 0.1f;
 
-        simTime.OnSimulationTick += HandleFatigueDrain;
+        onSimulationTick.onEventRaised += HandleFatigueDrain;
     }
 
     // Update is called once per frame
@@ -53,5 +55,19 @@ public class PlayerFatigue : MonoBehaviour
     private void OnGUI()
     {
       GUI.Label(new Rect(0, 920, 300, 20), "Fatigue: " + myfatigue.ToString() + "%");
+    }
+    GameData ISavable.SaveInstance(GameData data)
+    {
+        data.playerData.fatigue = currentFatigue;
+        return data;
+    }
+
+    void ISavable.LoadInstance(GameData data)
+    {
+        currentFatigue = data.playerData.fatigue;
+    }
+    void ISavable.NewGame()
+    {
+        currentFatigue = maxFatigue;
     }
 }

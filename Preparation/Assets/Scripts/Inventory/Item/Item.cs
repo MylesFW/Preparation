@@ -1,52 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public abstract class NewItem
+public abstract class Item
 {
-    // Item Strings
-    
-    public string name;   
-    public string description;
+    // Base Item Class all item types inherit from
+    // Brennan RF(1): 2/21/26
 
     // Current Item condition and decay rate
+    // Base weight of a single Item, this is used to calculate the weight of a stack of items
+    private string itemName;
+    private string description;
+    private float baseWeight;
+    private float decayRate;
+    public bool isIndefinite;
+    private bool isStackable;
+    private ItemDataSO data;
+    private PlayerContext context; // Light weight injection
 
-    public float condition;
-    public float decayRate;
-
-    // Current weight of a unique object (non stackable)
-    // Looks like a duplicate value, but seperating is used for partial consumption of unique items;
-
-    public float currentWeight;
-
-    // Current weight of the sum of a stacked Item (stackWeight * CurrentStackAmount
-    
-    public float currentStackWeight;
-
-    // Current stock amount, ie. inventory has 12 sticks, with an individual stick weight and a combined 
-    // weight thats received by current stack ammount
-
-    public float currentStackAmount;
-
-    // The weight of 1 stack of a given Item. (This serves as the maximum weight for unique objects)
-    // unique example: an inventory may contain full or partial amounts of canned beans but-
-    // -the stackWeight will decide the the maximum amount of beans the can can hold.
-
-    public float stackWeight;
-
-    // self explanatory
-    
-    public bool stackable;
-    
-    public bool indefiniteShelfLife;
-
-    public virtual void OnConsume() { }
-    public ObjectContext context;
-
-    private Sprite sprite;
-    private Sprite worldSprite;
-    public void UpdateStackWeight()
+    // Getters and Setters
+    public ItemDataSO ItemData
     {
-        currentStackWeight = stackWeight * currentStackAmount;
+        get => data;
+        set => data = value;
     }
+    public ItemDataSO Data => data;
+    public string ItemName
+    {
+        get => itemName;
+        set => itemName = value;
+    }
+    public string Description
+    {
+        get => description;
+        set => description = value;
+    }
+    public float BaseWeight
+    {
+        get => baseWeight;
+        set => baseWeight = Mathf.Clamp(value, 0, 100000);
+    }
+    public float DecayRate
+    {
+        get => decayRate;
+        set => decayRate = Mathf.Clamp(value, 0, 100);
+    }
+    public bool IsStackable
+    {
+        get => isStackable;
+        set => isStackable = value;
+    }
+    public bool IsIndefinite
+    {
+        get => IsIndefinite;
+        set => IsIndefinite = value;
+    }
+
+    public PlayerContext Context
+    {
+        get => context;
+        set => context = value;
+    }
+    public abstract Item Copy();
 }

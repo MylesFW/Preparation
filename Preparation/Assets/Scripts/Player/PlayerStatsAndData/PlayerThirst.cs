@@ -3,19 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerThirst : MonoBehaviour
+public class PlayerThirst : MonoBehaviour, ISavable
 {
+    public VoidEventChannelSO onSimulationTick;
+    public SimTime simTime;
     public Action isThirsty;
     public Action isDehydrated;
 
-    public float thirst;
-    public float maxThirst;
-    public float dehydrateRate;
+    [HideInInspector] public float thirst;
+    [HideInInspector] public float maxThirst;
+    [HideInInspector] public float dehydrateRate;
+    
     public float maxDehydrateRate;
 
-    public int thirstLevel;
-
-    public SimTime simTime;
+    [HideInInspector] public int thirstLevel;
     
     private void HandleThirstDrain()
     {
@@ -31,7 +32,7 @@ public class PlayerThirst : MonoBehaviour
         thirst = maxThirst;
         maxDehydrateRate = 1f;
         dehydrateRate = 0.28f;
-        simTime.OnSimulationTick += HandleThirstDrain;
+        onSimulationTick.onEventRaised += HandleThirstDrain;
     }
 
     // Update is called once per frame
@@ -53,5 +54,20 @@ public class PlayerThirst : MonoBehaviour
     private void OnGUI()
     {
         GUI.Label(new Rect(0, 900, 300, 20), "Thirst: " + thirstLevel.ToString() + "%");
+    }
+
+    GameData ISavable.SaveInstance(GameData data)
+    {
+        data.playerData.thirst = thirst;
+        return data;
+    }
+
+    void ISavable.LoadInstance(GameData data)
+    {
+        thirst = data.playerData.thirst;
+    }
+    void ISavable.NewGame()
+    {
+        thirst = maxThirst;
     }
 }

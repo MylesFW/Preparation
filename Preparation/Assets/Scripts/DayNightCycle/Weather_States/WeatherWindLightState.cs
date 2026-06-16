@@ -1,10 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
-
+[Serializable]
 public class WeatherWindLightState : State
 {
+    public ObjectContext self;
     // Called once on State enter
     public override void Enter()
     {
