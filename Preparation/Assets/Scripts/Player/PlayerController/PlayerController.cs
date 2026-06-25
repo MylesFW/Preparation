@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -52,7 +51,6 @@ public class PlayerController : Singleton<PlayerController>, ISavable
     // More bools
     private bool inventoryToggle;
     private bool crouchToggle;
-
 
     // Methods ============================================
     protected override void Awake()
@@ -286,17 +284,13 @@ public class PlayerController : Singleton<PlayerController>, ISavable
         var playerHealth = playerContext.playerHealth;
         playerHealth.currentHealth = playerData.health;
 
-        // Transform
-        
-        /*var vecPos = playerData.pos;
-        transform.position = vecPos.ToVec();
-        playerContext.playerMovement.velocity = vecPos.ToVec();
-        Debug.Log($"Player Loaded position: {transform.position.x}, {transform.position.y}.");
-        */
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
     }
     void ISavable.NewGame()
     {
-
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
     }
     #endregion
 }

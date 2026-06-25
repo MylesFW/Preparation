@@ -1,3 +1,4 @@
+using Newtonsoft.Json.Bson;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,25 +10,30 @@ public class MainMenuGui : MonoBehaviour
     {
         SaveSystem.instance.saveSlot = 0;
     }
-    public void OnGUI()
+    public void Start()
     {
-        int x = Screen.width / 2 - 75; // Center the buttons horizontally
-        int y = Screen.height / 2 - 250; // Center the buttons vertically
-        
-        if (GUI.Button(new Rect(x, y - 50, 150, 30), "New Game"))
-        {
-            // Initiate new game here.
-            SceneService sceneService = new SceneService();
-            SaveSystem.instance.initNewGame = true;
-            sceneService.JumpToScene("SaveSelect");
-        }
-        ;
-        if (GUI.Button(new Rect(x, y, 150, 30), "Load Game"))
-        {
-            SceneService sceneService = new SceneService();
-            SaveSystem.instance.initNewGame = false;
-            sceneService.JumpToScene("SaveSelect");
-        }
-        ;
+        PlayerController.instance.transform.position = new Vector3(-500, -500, 0);
+        SpriteRenderer spriteRenderer = PlayerController.instance.GetComponent<SpriteRenderer>();
+        spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
+    }
+
+    public void NewGameButton()
+    {
+        // Initiate new game here.
+        SceneService sceneService = new SceneService();
+        SaveSystem.instance.initNewGame = true;
+        sceneService.JumpToScene("SaveSelect");
+    }
+
+    public void LoadGameButton()
+    {
+        SceneService sceneService = new SceneService();
+        SaveSystem.instance.initNewGame = false;
+        sceneService.JumpToScene("SaveSelect");
+    }
+
+    public void QuitButton()
+    {
+        Application.Quit();
     }
 }

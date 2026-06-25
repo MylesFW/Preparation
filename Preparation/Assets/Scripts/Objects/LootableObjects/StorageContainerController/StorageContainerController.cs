@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Media;
-using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
-using static UnityEditor.Progress;
 
 public class StorageContainerController : MonoBehaviour, IInteractable, ISavable
 {

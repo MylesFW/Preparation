@@ -22,11 +22,11 @@ public class InteractManager : MonoBehaviour
     
     private float interactCooldown; // input cooldown preventing retrigger, not the state's lifetime
     private bool releaseReTrigger;
-    private bool isInteracting;
+    //private bool isInteracting;
 
     private void Awake()
     {
-        isInteracting = false;
+        //isInteracting = false;
         fsm = GetComponent<FiniteStateMachine>();
         playerInput = GetComponent<Inputs>();
     }

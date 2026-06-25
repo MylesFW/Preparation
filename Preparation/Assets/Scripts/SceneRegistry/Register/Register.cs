@@ -13,6 +13,10 @@ public class Register : MonoBehaviour
     public bool savable;
     public bool persistent;
 
+    private void Awake()
+    {
+        
+    }
     private void OnEnable()
     {
         objectRegistry = FindObjectOfType<ObjectRegistry>();

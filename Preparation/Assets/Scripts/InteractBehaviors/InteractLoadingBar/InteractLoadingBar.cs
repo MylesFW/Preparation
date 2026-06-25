@@ -8,11 +8,9 @@ public class InteractLoadingBar : MonoBehaviour
     public int heightOffset;
     public float loadSpeed;
 
-    private float percentProgress;
-
     public void Awake()
     {
-        percentProgress = 0;
+        //percentProgress = 0;
         position = transform.position;
         position.y += heightOffset; 
     }
