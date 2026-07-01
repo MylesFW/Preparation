@@ -36,8 +36,6 @@ public class LootableInventory : Inventory
     // Privs
     private ItemUtils itemUtils;
 
-    private bool flag;
-
     private void Awake()
     {
         playerContext = PlayerController.instance.playerContext;
@@ -47,8 +45,6 @@ public class LootableInventory : Inventory
         storageContainerController = GetComponent<StorageContainerController>();
         wasLooted = false;
         isInteracting = false;
-
-        flag = false;
     }
     
     private void Start()

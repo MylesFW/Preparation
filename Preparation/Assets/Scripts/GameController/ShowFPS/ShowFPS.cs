@@ -45,8 +45,7 @@ public class ShowFPS : Singleton<ShowFPS>
     void Update()
     {
         
-        // Update current frame rate
-         
+        // Update current frame rate         
         currentFPS = 1 / Time.unscaledDeltaTime;
 
         // Toggle GUI text on screen

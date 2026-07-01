@@ -13,8 +13,8 @@ public class SceneLibrary : Singleton<SceneLibrary>, ISavable
     protected override void Awake()
     {
         base.Awake();
-        sceneNames.Add("Scene_2");
-        sceneNames.Add("SampleScene");
+        //sceneNames.Add("Scene_2");
+        //sceneNames.Add("SampleScene");
         sceneNames.Add("SaveSelect");
         sceneNames.Add("MainMenu");
         sceneNames.Add("DeathScene");
@@ -30,20 +30,6 @@ public class SceneLibrary : Singleton<SceneLibrary>, ISavable
     public void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    public void OnGUI()
-    {
-        GUI.Label(new Rect(500, 5, 250, 30),("Current Scene: " + currentScene));
-        if (GUI.Button(new Rect(500, 20, 150, 30), "Load Scene 1"))
-        {
-            sceneService.GoToScene(sceneNames[0]);
-        }
-        ;
-        if (GUI.Button(new Rect(500, 70, 150, 30), "Load Scene 2"))
-        {
-            sceneService.GoToScene(sceneNames[1]);
-        }
     }
     public void OnSceneLoaded(Scene name, LoadSceneMode mode)
     {

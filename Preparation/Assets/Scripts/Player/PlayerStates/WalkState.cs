@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class WalkState : State
 {
@@ -12,7 +11,7 @@ public class WalkState : State
      
     private float walkSpeed;
 
-    private SpriteMatrix spriteMatrix;
+    //private SpriteMatrix spriteMatrix;
     
     private DirectionalSpriteCollection directionalSpriteSheet;
 
@@ -70,6 +69,6 @@ public class WalkState : State
     {
         self.animator2D.frameIndex = 1;
         self.animator2D.playAnimation = false;
-        spriteMatrix = null;
+        //spriteMatrix = null;
     }  
 }

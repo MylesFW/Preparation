@@ -3,91 +3,81 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public struct SaveSlot
+{
+    public int slot;
+    public bool occupied;
+    
+    public SaveSlot(int slot, bool isOccupied = false)
+    {
+        this.slot = slot;
+        this.occupied = isOccupied;
+    }
+}
+
 public class SaveSelect : MonoBehaviour
 {
-    bool slot1_Occupied;
-    bool slot2_Occupied;
-    bool slot3_Occupied;
+    SaveSlot slot1 = new SaveSlot(1);
+    SaveSlot slot2 = new SaveSlot(2);
+    SaveSlot slot3 = new SaveSlot(3);
+    
+    private SaveSlot[] savesSlots = new SaveSlot[3];
+
     bool isNewGame;
-   
+    
     private void Awake()
     {
         CheckSaves();
+        savesSlots[0] = slot1;
+        savesSlots[1] = slot2;
+        savesSlots[2] = slot3;
     }
-
-    public void OnGUI()
+    
+    public void SelectSaveButton(int saveNumber)
     {
-        int x = Screen.width / 2 - 75; // Center the buttons horizontally
-        int y = Screen.height / 2 - 250; // Center the buttons vertically     
+        SaveSlot saveSlot = new SaveSlot(1);
+        saveSlot.slot = savesSlots[saveNumber - 1].slot;
+        saveSlot.occupied = savesSlots[saveNumber - 1].occupied;
 
-        if (GUI.Button(new Rect(x, y - 50, 150, 30), "Save 1"))
+        if (isNewGame == false)
         {
-            if (isNewGame == false)
+            if (saveSlot.occupied == true)
             {
-                if (slot1_Occupied == true)
-                {
-                    SaveSystem.instance.saveSlot = 1;
-                    SaveSystem.instance.LoadGameJSON();
-                }
-                else
-                {
-                    Debug.Log("This Save slot is empty.");
-                }
+                SaveSystem.instance.saveSlot = saveSlot.slot;
+                SaveSystem.instance.LoadGameJSON();
             }
             else
             {
-                SaveSystem.instance.NewGame(1);
+                Debug.Log("This Save slot is empty.");
             }
+        }
+        else
+        {
+            if (saveSlot.occupied == true)
+            {
+                //... Add popup saying "Overwright existing save?"
+                SaveSystem.instance.NewGame(saveSlot.slot);
+            }
+            else 
+            { 
+                SaveSystem.instance.NewGame(saveSlot.slot);
+            }
+        }
+    }       
 
-        }
-        ;
-        if (GUI.Button(new Rect(x, y, 150, 30), "Save 2"))
-        {
-            if (isNewGame == false)
-            {
-                if (slot1_Occupied == true)
-                {
-                    SaveSystem.instance.saveSlot = 2;
-                    SaveSystem.instance.LoadGameJSON();
-                }
-                else
-                {
-                    Debug.Log("This Save slot is empty.");
-                }
-            }
-            else
-            {
-                SaveSystem.instance.NewGame(2);
-            }
-        }
-        ;
-        if (GUI.Button(new Rect(x, y +50, 150, 30), "Save 3"))
-        {
-            if (isNewGame == false)
-            {
-                if (slot1_Occupied == true)
-                {
-                    SaveSystem.instance.saveSlot = 3;
-                    SaveSystem.instance.LoadGameJSON();
-                }
-                else
-                {
-                    Debug.Log("This Save slot is empty.");
-                }
-            }
-            else
-            {
-                SaveSystem.instance.NewGame(3);
-            }
-        }
-        ;
+    
+    public void BackButton()
+    {
+        SceneLibrary.instance.sceneService.JumpToScene("MainMenu");
     }
+    
     
     private void CheckSaves()
     {
         isNewGame = SaveSystem.instance.initNewGame;
-        slot1_Occupied = SaveSystem.instance.fileDataService.ContainsSave(1);
-        slot2_Occupied = SaveSystem.instance.fileDataService.ContainsSave(2);
-        slot3_Occupied = SaveSystem.instance.fileDataService.ContainsSave(3);
+    
+        slot1.occupied = SaveSystem.instance.fileDataService.ContainsSave(1);
+        slot2.occupied = SaveSystem.instance.fileDataService.ContainsSave(2);
+        slot3.occupied = SaveSystem.instance.fileDataService.ContainsSave(3);
     }
 }
